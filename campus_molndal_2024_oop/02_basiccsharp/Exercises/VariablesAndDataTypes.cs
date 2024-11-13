@@ -4,7 +4,7 @@ namespace campus_molndal_2024_oop._02_basiccsharp
 {
     public static class VariablesAndDataTypes
     {
-        public static void GetExercise1()
+        public static void GetExercise1and2()
         {
             // En heltalsvariabel age med värdet 30.
             const int age = 30;
@@ -17,11 +17,11 @@ namespace campus_molndal_2024_oop._02_basiccsharp
             // En bool-variabel isStudentmed värdettrue`.
             const bool isStudent = true;
 
-            Console.WriteLine(age);
-            Console.WriteLine(height);
-            Console.WriteLine(initial);
-            Console.WriteLine(name);
-            Console.WriteLine(isStudent);
+            Console.WriteLine($"age har värdet {age} och är av typen {age.GetType().Name}");
+            Console.WriteLine($"height har värdet {height} och är av typen {height.GetType().Name}");
+            Console.WriteLine($"initial har värdet {initial} och är av typen {initial.GetType().Name}");
+            Console.WriteLine($"name har värdet {name} och är av typen {name.GetType().Name}");
+            Console.WriteLine($"isStudent har värdet {isStudent} och är av typen {isStudent.GetType().Name}");
         }
     }
 }

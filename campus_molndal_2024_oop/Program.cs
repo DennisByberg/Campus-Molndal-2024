@@ -7,8 +7,9 @@ namespace campus_molndal_2024_oop
     {
         static void Main()
         {
-            VariablesAndDataTypes.GetExercise1();
+            BasicCSharp.RunExercises();
 
+            // Använder denna för att consolen inte ska stängas av efter start.
             Console.ReadLine();
         }
     }

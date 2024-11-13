@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="02_basiccsharp\VariablesAndDataTypes.cs" />
+    <Compile Include="02_basiccsharp\BasicCSharp.cs" />
+    <Compile Include="02_basiccsharp\Exercises\OperatorsAndExpressions.cs" />
+    <Compile Include="02_basiccsharp\Exercises\VariablesAndDataTypes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
