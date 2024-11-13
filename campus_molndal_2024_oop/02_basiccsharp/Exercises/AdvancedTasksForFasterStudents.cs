@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._02_basiccsharp
 {
@@ -46,6 +47,19 @@ namespace campus_molndal_2024_oop._02_basiccsharp
             {
                 Console.WriteLine("Enter a valid age");
             }
+        }
+
+        // Skriv ett program som beräknar den totala kostnaden för en shoppinglista.
+        // Använd variabler för att representera priserna för olika objekt och summera dessa för att få det totala beloppet.
+        public static void PrintExercise3()
+        {
+            const double applePrice = 10.99;
+            const double orangePrice = 5.99;
+            const double pineapplePrice = 12.99;
+
+            const double totalCost = applePrice + orangePrice + pineapplePrice;
+
+            Console.WriteLine($"totalCost: {totalCost}");
         }
     }
 
