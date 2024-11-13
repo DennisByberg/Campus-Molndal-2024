@@ -11,7 +11,8 @@
             //OperatorsAndExpressions.PrintExercise3();
             //OperatorsAndExpressions.PrintExercise4();
 
-            AdvancedTasksForFasterStudents.PrintExercise1();
+            //AdvancedTasksForFasterStudents.PrintExercise1();
+            AdvancedTasksForFasterStudents.PrintExercise2();
         }
     }
 }

@@ -29,5 +29,24 @@ namespace campus_molndal_2024_oop._02_basiccsharp
                 Console.WriteLine("Please enter valid integers for the sides.");
             }
         }
+
+        // Program där användaren matar in sin ålder, och programmet bestämmer om de är berättigade att rösta(18 år eller äldre) och om de är berättigade till pension(65 år eller äldre).
+        public static void PrintExercise2()
+        {
+            try
+            {
+                Console.Write("Enter your age: ");
+                var age = Convert.ToInt32(Console.ReadLine());
+
+                if (age >= 65) Console.WriteLine("You are eligible to vote and eligible for pension.");
+                else if (age >= 18) Console.WriteLine("You are eligible to vote but not eligible for pension yet.");
+                else Console.WriteLine("You are not eligible to vote yet and not eligible for pension yet.");
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Enter a valid age");
+            }
+        }
     }
+
 }
