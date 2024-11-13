@@ -34,7 +34,8 @@
             //AdvancedTasksForFasterStudents2.PrintExercise2();
 
             // 3.md
-            ForLoopExercises.PrintExercise1();
+            //ForLoopExercises.PrintExercise1();
+            ForLoopExercises.PrintExercise2();
 
         }
     }

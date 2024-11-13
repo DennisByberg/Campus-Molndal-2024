@@ -12,5 +12,18 @@ namespace campus_molndal_2024_oop._02_basiccsharp
                 Console.WriteLine(i);
             }
         }
+
+        // Skriv ett program som använder en for-loop för att beräkna och skriva ut summan av alla tal från 1 till 100.
+        public static void PrintExercise2()
+        {
+            int sum = 0;
+
+            for (int i = 1; i <= 100; i++)
+            {
+                sum += i;
+            }
+
+            Console.WriteLine($"Sum from 1-100 is {sum}");
+        }
     }
 }
