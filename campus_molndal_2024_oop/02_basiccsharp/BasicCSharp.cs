@@ -8,6 +8,7 @@
 
             OperatorsAndExpressions.PrintExercise1();
             OperatorsAndExpressions.PrintExercise2();
+            OperatorsAndExpressions.PrintExercise3();
         }
     }
 }
