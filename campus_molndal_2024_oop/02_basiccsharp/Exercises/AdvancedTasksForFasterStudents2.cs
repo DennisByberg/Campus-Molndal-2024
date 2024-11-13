@@ -40,5 +40,38 @@ namespace campus_molndal_2024_oop._02_basiccsharp
                     break;
             }
         }
+
+        // Skapa ett program som beräknar en rabatt på en produkt baserat på användarens medlemsstatus (t.ex. "guld", "silver", "brons"). Använd en switch-sats för att tillämpa rätt rabatt.
+        //Guld: 20%
+        //Silver: 10%
+        //Brons: 5%
+        public static void PrintExercise2()
+        {
+            var productPrice = 10.99;
+            var memberStatus = "bronze";
+
+            var goldDiscount = 0.20;
+            var silverDiscount = 0.10;
+            var bronzeDiscount = 0.05;
+
+            switch (memberStatus)
+            {
+                case "gold":
+                    Console.WriteLine($"Product with price {productPrice} cost {Math.Round(productPrice - (productPrice * goldDiscount), 2)} with gold member status");
+                    break;
+
+                case "silver":
+                    Console.WriteLine($"Product with price {productPrice} cost {Math.Round(productPrice - (productPrice * silverDiscount), 2)} with silver member status");
+                    break;
+
+                case "bronze":
+                    Console.WriteLine($"Product with price {productPrice} cost {Math.Round(productPrice - (productPrice * bronzeDiscount), 2)} with bronze member status");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid memberStatus");
+                    break;
+            }
+        }
     }
 }

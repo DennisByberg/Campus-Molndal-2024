@@ -30,7 +30,8 @@
             //SwitchStatementsExercises.PrintExercise3();
 
             //2.md
-            AdvancedTasksForFasterStudents2.PrintExercise1();
+            //AdvancedTasksForFasterStudents2.PrintExercise1();
+            AdvancedTasksForFasterStudents2.PrintExercise2();
 
         }
     }
