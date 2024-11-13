@@ -20,7 +20,8 @@
             //AdvancedTasksForFasterStudents.PrintExercise4();
 
             // 2.md 
-            IfElseExercises.PrintExercise1();
+            //IfElseExercises.PrintExercise1();
+            IfElseExercises.PrintExercise2();
         }
     }
 }
