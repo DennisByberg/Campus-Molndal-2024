@@ -32,7 +32,7 @@ namespace campus_molndal_2024_oop._02_basiccsharp
             }
         }
 
-        //Skriv ett program som jämför tre tal och bestämmer vilket som är störst.
+        // Skriv ett program som jämför tre tal och bestämmer vilket som är störst.
         public static void PrintExercise3()
         {
             int a = 30;

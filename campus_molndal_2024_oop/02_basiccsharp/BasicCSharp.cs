@@ -22,7 +22,11 @@
             // 2.md 
             //IfElseExercises.PrintExercise1();
             //IfElseExercises.PrintExercise2();
-            IfElseExercises.PrintExercise3();
+            //IfElseExercises.PrintExercise3();
+
+            // 2.md
+            //SwitchStatementsExercises.PrintExercise1();
+            SwitchStatementsExercises.PrintExercise2();
         }
     }
 }

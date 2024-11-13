@@ -47,6 +47,7 @@
     <Compile Include="02_basiccsharp\Exercises\AdvancedTasksForFasterStudents.cs" />
     <Compile Include="02_basiccsharp\Exercises\IfElseExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\OperatorsAndExpressions.cs" />
+    <Compile Include="02_basiccsharp\Exercises\SwitchStatementsExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\VariablesAndDataTypes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
