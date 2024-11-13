@@ -35,7 +35,8 @@
 
             // 3.md
             //ForLoopExercises.PrintExercise1();
-            ForLoopExercises.PrintExercise2();
+            //ForLoopExercises.PrintExercise2();
+            ForLoopExercises.PrintExercise3();
 
         }
     }

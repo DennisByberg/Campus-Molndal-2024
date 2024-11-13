@@ -25,5 +25,16 @@ namespace campus_molndal_2024_oop._02_basiccsharp
 
             Console.WriteLine($"Sum from 1-100 is {sum}");
         }
+
+        // Skriv ett program som använder en for-loop för att skriva ut multiplikationstabellen för ett valt tal (t.ex. 5).
+        public static void PrintExercise3()
+        {
+            int number = 5;
+
+            for (int i = 1; i <= 10; i++)
+            {
+                Console.WriteLine($"{number} * {i} = {number * i}");
+            }
+        }
     }
 }
