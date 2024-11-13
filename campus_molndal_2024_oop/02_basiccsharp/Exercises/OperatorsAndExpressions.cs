@@ -1,15 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace campus_molndal_2024_oop._02_basiccsharp.Exercises
+namespace campus_molndal_2024_oop._02_basiccsharp
 {
     public static class OperatorsAndExpressions
     {
-        public static void GetExercise1()
+        public static void PrintExercise1()
         {
             // Skapa ett program som beräknar och skriver ut följande:
             // Summan av 10 och 20.
@@ -26,6 +21,20 @@ namespace campus_molndal_2024_oop._02_basiccsharp.Exercises
 
             // Resten när 10 delas med 3.
             Console.WriteLine(10 % 3);
+        }
+
+        public static void PrintExercise2()
+        {
+            // Skapa ett program som jämför två tal, t.ex.a = 15 och b = 20, och skriver ut resultatet av följande jämförelser:
+            const int a = 15;
+            const int b = 20;
+
+            // Är a lika med b?
+            Console.WriteLine(a == b);
+            // Är a större än b?
+            Console.WriteLine(a > b);
+            // Är a mindre än eller lika med b?
+            Console.WriteLine(a <= b);
         }
     }
 }

@@ -4,7 +4,7 @@ namespace campus_molndal_2024_oop._02_basiccsharp
 {
     public static class VariablesAndDataTypes
     {
-        public static void GetExercise1and2()
+        public static void PrintExercise1and2()
         {
             // En heltalsvariabel age med värdet 30.
             const int age = 30;

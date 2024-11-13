@@ -4,7 +4,10 @@
     {
         public static void RunExercises()
         {
-            VariablesAndDataTypes.GetExercise1and2();
+            VariablesAndDataTypes.PrintExercise1and2();
+
+            OperatorsAndExpressions.PrintExercise1();
+            OperatorsAndExpressions.PrintExercise2();
         }
     }
 }
