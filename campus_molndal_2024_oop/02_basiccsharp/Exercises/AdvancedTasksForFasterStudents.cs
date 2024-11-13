@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -60,6 +61,22 @@ namespace campus_molndal_2024_oop._02_basiccsharp
             const double totalCost = applePrice + orangePrice + pineapplePrice;
 
             Console.WriteLine($"totalCost: {totalCost}");
+        }
+
+        // Skapa ett program som använder en kombination av logiska och aritmetiska operatorer för att lösa en enkel ekvation,
+        // t.ex.x + 2 * y = 10, och skriver ut om det finns lösningar för givna värden av x och y.
+        public static void PrintExercise4()
+        {
+            Console.Write("Enter the value of x: ");
+            int x = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("Enter the value of y: ");
+            int y = Convert.ToInt32(Console.ReadLine());
+
+            bool isSolveable = x + (2 * y) == 10;
+
+            if (isSolveable) Console.WriteLine("Yes");
+            else Console.WriteLine("No");
         }
     }
 

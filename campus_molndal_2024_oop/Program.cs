@@ -9,7 +9,7 @@ namespace campus_molndal_2024_oop
         {
             BasicCSharp.RunExercises();
 
-            // Använder denna för att consolen inte ska stängas av efter start.
+            // Uses this to prevent the console from closing after startup.
             Console.ReadLine();
         }
     }

@@ -13,7 +13,8 @@
 
             //AdvancedTasksForFasterStudents.PrintExercise1();
             //AdvancedTasksForFasterStudents.PrintExercise2();
-            AdvancedTasksForFasterStudents.PrintExercise3();
+            //AdvancedTasksForFasterStudents.PrintExercise3();
+            AdvancedTasksForFasterStudents.PrintExercise4();
         }
     }
 }
