@@ -31,5 +31,20 @@ namespace campus_molndal_2024_oop._02_basiccsharp
                 Console.WriteLine("Enter a valid age");
             }
         }
+
+        //Skriv ett program som jämför tre tal och bestämmer vilket som är störst.
+        public static void PrintExercise3()
+        {
+            int a = 30;
+            int b = 35;
+            int c = 50;
+
+            var biggestNumber = a;
+
+            if (b > biggestNumber) biggestNumber = b;
+            if (c > biggestNumber) biggestNumber = c;
+
+            Console.WriteLine($"Biggest number is {biggestNumber}");
+        }
     }
 }

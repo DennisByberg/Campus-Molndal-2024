@@ -21,7 +21,8 @@
 
             // 2.md 
             //IfElseExercises.PrintExercise1();
-            IfElseExercises.PrintExercise2();
+            //IfElseExercises.PrintExercise2();
+            IfElseExercises.PrintExercise3();
         }
     }
 }
