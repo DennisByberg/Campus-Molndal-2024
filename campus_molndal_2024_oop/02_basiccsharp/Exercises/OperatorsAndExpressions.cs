@@ -4,7 +4,7 @@ namespace campus_molndal_2024_oop._02_basiccsharp
 {
     public static class OperatorsAndExpressions
     {
-        // Skapa ett program som beräknar och skriver ut följande:
+        // Beräknar och skriver ut
         public static void PrintExercise1()
         {
             // Summan av 10 och 20.
@@ -23,7 +23,7 @@ namespace campus_molndal_2024_oop._02_basiccsharp
             Console.WriteLine(10 % 3);
         }
 
-        // Skapa ett program som jämför två tal och skriver ut resultatet av följande jämförelser:
+        // Jämför två tal och skriver ut resultatet av jämförelser
         public static void PrintExercise2()
         {
             const int a = 15;
@@ -37,7 +37,7 @@ namespace campus_molndal_2024_oop._02_basiccsharp
             Console.WriteLine(a <= b);
         }
 
-        // Skapa ett program som använder logiska operatorer för att utvärdera följande uttryck:
+        // Använder logiska operatorer för att utvärdera uttryck
         public static void PrintExercise3()
         {
             const int x = 10;
@@ -52,7 +52,13 @@ namespace campus_molndal_2024_oop._02_basiccsharp
 
             // Negera resultatet av x > y.
             Console.WriteLine(!(x > y));
-
         }
+
+        // Beräknar och skriver ut resultatet av ett uttryck som använder både aritmetiska och jämförelseoperatorer
+        public static void PrintExercise4()
+        {
+            Console.WriteLine((10 + 5) * 2 > 20);
+        }
+
     }
 }

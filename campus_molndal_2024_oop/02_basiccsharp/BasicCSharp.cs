@@ -4,11 +4,14 @@
     {
         public static void RunExercises()
         {
-            VariablesAndDataTypes.PrintExercise1and2();
+            //VariablesAndDataTypes.PrintExercise1and2();
 
-            OperatorsAndExpressions.PrintExercise1();
-            OperatorsAndExpressions.PrintExercise2();
-            OperatorsAndExpressions.PrintExercise3();
+            //OperatorsAndExpressions.PrintExercise1();
+            //OperatorsAndExpressions.PrintExercise2();
+            //OperatorsAndExpressions.PrintExercise3();
+            //OperatorsAndExpressions.PrintExercise4();
+
+            AdvancedTasksForFasterStudents.PrintExercise1();
         }
     }
 }
