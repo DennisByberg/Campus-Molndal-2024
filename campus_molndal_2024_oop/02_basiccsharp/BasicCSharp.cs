@@ -29,9 +29,12 @@
             //SwitchStatementsExercises.PrintExercise2();
             //SwitchStatementsExercises.PrintExercise3();
 
-            //2.md
+            // 2.md
             //AdvancedTasksForFasterStudents2.PrintExercise1();
-            AdvancedTasksForFasterStudents2.PrintExercise2();
+            //AdvancedTasksForFasterStudents2.PrintExercise2();
+
+            // 3.md
+            ForLoopExercises.PrintExercise1();
 
         }
     }
