@@ -14,36 +14,47 @@ namespace campus_molndal_2024_oop._02_basiccsharp
                 case 1:
                     Console.WriteLine("Januari");
                     break;
+
                 case 2:
                     Console.WriteLine("Februari");
                     break;
+
                 case 3:
                     Console.WriteLine("Mars");
                     break;
+
                 case 4:
                     Console.WriteLine("April");
                     break;
+
                 case 5:
                     Console.WriteLine("Maj");
                     break;
+
                 case 6:
                     Console.WriteLine("Juni");
                     break;
+
                 case 7:
                     Console.WriteLine("Juli");
                     break;
+
                 case 8:
                     Console.WriteLine("Augusti");
                     break;
+
                 case 9:
                     Console.WriteLine("September");
                     break;
+
                 case 10:
                     Console.WriteLine("Oktober");
                     break;
+
                 case 11:
                     Console.WriteLine("November");
                     break;
+
                 case 12:
                     Console.WriteLine("December");
                     break;
@@ -54,6 +65,7 @@ namespace campus_molndal_2024_oop._02_basiccsharp
             }
         }
 
+        // Skapa ett program som tar en poäng(0-5) och skriver ut motsvarande betyg(A-F)
         public static void PrintExercise2()
         {
             int grade = 5;
@@ -86,6 +98,31 @@ namespace campus_molndal_2024_oop._02_basiccsharp
 
                 default:
                     Console.WriteLine("Invalid grade");
+                    break;
+            }
+        }
+
+        //Skriv ett program som tar en vardagsmåltid som inmatning(t.ex. "frukost", "lunch", "middag") och skriver ut en rekommenderad måltid.Använd en switch-sats.
+        public static void PrintExercise3()
+        {
+            string meal = "middag";
+
+            switch (meal)
+            {
+                case "frukost":
+                    Console.WriteLine("Egg & Sandwich");
+                    break;
+
+                case "lunch":
+                    Console.WriteLine("Fish & Chips");
+                    break;
+
+                case "middag":
+                    Console.WriteLine("Beef tartar");
+                    break;
+
+                default:
+                    Console.WriteLine("Invalid meal");
                     break;
             }
         }

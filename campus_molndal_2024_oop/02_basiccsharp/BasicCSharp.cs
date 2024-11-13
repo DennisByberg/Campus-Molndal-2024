@@ -26,7 +26,9 @@
 
             // 2.md
             //SwitchStatementsExercises.PrintExercise1();
-            SwitchStatementsExercises.PrintExercise2();
+            //SwitchStatementsExercises.PrintExercise2();
+            SwitchStatementsExercises.PrintExercise3();
+
         }
     }
 }
