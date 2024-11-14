@@ -64,5 +64,26 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             System.Console.WriteLine($"Book1 genre is science?: {book1.IsBookOfGenre("Science")}");
             System.Console.WriteLine($"Book2 genre is action?: {book2.IsBookOfGenre("Action")}");
         }
+
+        // Lägg till en metod i klassen Book som jämför två böcker baserat på antalet sidor och returnerar vilken bok som är längre.
+        // Skapa två bokobjekt med olika antal sidor och använd metoden för att jämföra dem.
+        public static void PrintExercise4()
+        {
+            var book1 = new Book();
+
+            book1.Title = "Programming Book";
+            book1.Author = "A random dev";
+            book1.Genre = "Comedy";
+            book1.Pages = 300;
+
+            var book2 = new Book();
+
+            book2.Title = "Programming Book 2";
+            book2.Author = "A random dev 2";
+            book2.Genre = "Action";
+            book2.Pages = 200;
+
+            System.Console.WriteLine(book1.IsBookLongerThan(book2));
+        }
     }
 }

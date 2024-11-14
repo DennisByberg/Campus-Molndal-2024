@@ -25,5 +25,11 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             if (genre == null) return false;
             return string.Equals(genre, Genre, StringComparison.OrdinalIgnoreCase);
         }
+
+        // Lägg till en metod i klassen Book som jämför två böcker baserat på antalet sidor och returnerar vilken bok som är längre.
+        public bool IsBookLongerThan(Book book)
+        {
+            return Pages > book.Pages;
+        }
     }
 }
