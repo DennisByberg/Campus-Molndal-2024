@@ -8,7 +8,8 @@
             //Exercises.PrintExercise1();
             //Exercises.PrintExercise2();
             //Exercises.PrintExercise3();
-            Exercises.PrintExercise4();
+            //Exercises.PrintExercise4();
+            Exercises.PrintExercise5();
         }
     }
 }

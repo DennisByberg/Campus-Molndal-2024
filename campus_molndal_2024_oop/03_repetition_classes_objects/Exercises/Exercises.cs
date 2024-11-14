@@ -1,4 +1,4 @@
-﻿using System.Security.Cryptography;
+﻿using campus_molndal_2024_oop._03_repetition_classes_objects.Classes;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
@@ -84,6 +84,36 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             book2.Pages = 200;
 
             System.Console.WriteLine(book1.IsBookLongerThan(book2));
+        }
+
+        // Skapa en ny klass kallad Library som innehåller en lista över böcker.
+        // * Lägg till metoder för att:
+        // * Lägga till en bok i biblioteket.
+        // * Ta bort en bok från biblioteket.
+        // * Visa alla böcker i biblioteket.
+        // Skapa ett objekt av Library och lägg till flera böcker i det. Använd metoderna för att manipulera listan av böcker.
+        public static void PrintExercise5()
+        {
+            var library = new Library();
+
+            var book1 = new Book();
+
+            book1.Title = "Programming Book";
+            book1.Author = "A random dev";
+            book1.Genre = "Comedy";
+            book1.Pages = 300;
+
+            var book2 = new Book();
+
+            book2.Title = "Programming Book 2";
+            book2.Author = "A random dev 2";
+            book2.Genre = "Action";
+            book2.Pages = 200;
+
+            library.AddBook(book1);
+            library.AddBook(book2);
+
+            library.PrintAllBooks();
         }
     }
 }
