@@ -18,5 +18,18 @@ namespace campus_molndal_2024_oop._02_basiccsharp
             Console.WriteLine($"Age: {person.Age}");
             Console.WriteLine($"Name: {person.Occupation}");
         }
+
+        // Lägg till en metod Introduce() i klassen Person som skriver ut en presentation av personen.
+        // Anropa metoden för att presentera objektet.
+        public static void PrintExercise2()
+        {
+            var person = new Person();
+
+            person.Name = "Dennis";
+            person.Age = 30;
+            person.Occupation = "Developer";
+
+            person.Introduce();
+        }
     }
 }

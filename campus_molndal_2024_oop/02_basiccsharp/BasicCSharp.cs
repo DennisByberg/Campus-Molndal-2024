@@ -51,7 +51,8 @@
             //AdvancedExercises.PrintExercise2();
 
             // 4.md
-
+            //ClassesAndObjectsExercises.PrintExercise1();
+            ClassesAndObjectsExercises.PrintExercise2();
         }
     }
 }
