@@ -20,5 +20,14 @@
             var circle = new Circle(10);
             System.Console.WriteLine($"The circumference of the circle is {circle.CalculateCircumference()}");
         }
+
+        // Utvidga klassen Rectangle från Uppgift 3.1 med en konstruktor som tar
+        // Width och Height som parametrar och en metod CalculateCircumference() som beräknar rektangelns omkrets.
+        public static void PrintExercise3()
+        {
+            var rectangle = new Rectangle(5, 8);
+
+            System.Console.WriteLine($"The circumference of the rectangle is {rectangle.CalculateCircumference()}");
+        }
     }
 }

@@ -60,7 +60,8 @@
 
             // 4.md
             //AdvancedExercises2.PrintExercise1();
-            AdvancedExercises2.PrintExercise2();
+            //AdvancedExercises2.PrintExercise2();
+            AdvancedExercises2.PrintExercise3();
         }
     }
 }

@@ -16,5 +16,10 @@
             var area = Height * Width;
             System.Console.WriteLine($"The area is: {area}");
         }
+
+        public int CalculateCircumference()
+        {
+            return 2 * (Height + Width);
+        }
     }
 }
