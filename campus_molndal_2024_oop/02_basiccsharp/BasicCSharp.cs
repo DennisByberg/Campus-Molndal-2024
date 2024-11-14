@@ -52,7 +52,11 @@
 
             // 4.md
             //ClassesAndObjectsExercises.PrintExercise1();
-            ClassesAndObjectsExercises.PrintExercise2();
+            //ClassesAndObjectsExercises.PrintExercise2();
+
+            // 4.md
+            ConstructorTasks.PrintExercise1();
+            //ConstructorTasks.PrintExercise2();
         }
     }
 }

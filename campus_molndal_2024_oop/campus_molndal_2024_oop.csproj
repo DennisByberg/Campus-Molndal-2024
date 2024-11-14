@@ -49,6 +49,7 @@
     <Compile Include="02_basiccsharp\Exercises\AdvancedTasksForFasterStudents2.cs" />
     <Compile Include="02_basiccsharp\Exercises\ClassesAndObjectsExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\Classes\Person.cs" />
+    <Compile Include="02_basiccsharp\Exercises\ConstructorTasks.cs" />
     <Compile Include="02_basiccsharp\Exercises\DoWhileLoopExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\ForLoopExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\IfElseExercises.cs" />
