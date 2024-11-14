@@ -47,7 +47,8 @@
             //DoWhileLoopExercises.PrintExercise2();
 
             // 3.md
-            AdvancedExercises.PrintExercise1();
+            //AdvancedExercises.PrintExercise1();
+            AdvancedExercises.PrintExercise2();
         }
     }
 }
