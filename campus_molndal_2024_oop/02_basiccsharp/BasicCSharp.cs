@@ -55,8 +55,8 @@
             //ClassesAndObjectsExercises.PrintExercise2();
 
             // 4.md
-            ConstructorTasks.PrintExercise1();
-            //ConstructorTasks.PrintExercise2();
+            //ConstructorTasks.PrintExercise1();
+            ConstructorTasks.PrintExercise2();
         }
     }
 }

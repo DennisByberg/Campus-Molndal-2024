@@ -12,9 +12,12 @@ namespace campus_molndal_2024_oop._02_basiccsharp
             person.Introduce();
         }
 
+        // Lägg till en konstruktor utan parametrar som tilldelar standardvärden till attributen.
+        // Skapa ett objekt med denna konstruktor och skriv ut standardvärdena.
         public static void PrintExercise2()
         {
-
+            var person = new Person();
+            person.Introduce();
         }
     }
 }

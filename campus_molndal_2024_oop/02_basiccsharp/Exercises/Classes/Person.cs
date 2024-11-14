@@ -4,9 +4,9 @@ namespace campus_molndal_2024_oop._02_basiccsharp
 {
     public class Person
     {
-        public string Name;
-        public int Age;
-        public string Occupation;
+        public string Name = "Unknown";
+        public int Age = 0;
+        public string Occupation = "Unknown";
 
         // Constructor
         public Person() { }
