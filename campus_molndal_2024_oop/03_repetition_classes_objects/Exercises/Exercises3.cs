@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
@@ -44,12 +43,29 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             person3.Introduce();
         }
 
-        //Lägg till validering i konstruktorerna i klassen Person för att säkerställa att Age alltid är ett positivt tal.
-        //Om ett ogiltigt värde ges, kasta ett undantag (ArgumentException).
-        //Skapa ett objekt med ett ogiltigt Age-värde och se vad som händer.
+        // Lägg till validering i konstruktorerna i klassen Person för att säkerställa att Age alltid är ett positivt tal.
+        // Om ett ogiltigt värde ges, kasta ett undantag (ArgumentException).
+        // Skapa ett objekt med ett ogiltigt Age-värde och se vad som händer.
         public static void PrintExercise4()
         {
             //var person = new Person("Dennis", -1, "dennis@gmail.com"); // THROWS.
+        }
+
+        // Skapa en klass kallad Product med fälten Id, Name, Price, och Quantity.
+        // Skapa en anpassad konstruktor som tar alla dessa fält som parametrar.
+        // Skapa överlagrade konstruktörer som tillåter skapande av objekt med olika kombinationer av fält(t.ex.endast Id och Name, eller Id, Name och Price).
+        // Lägg till logik i konstruktörerna för att tilldela standardvärden om vissa fält inte är tillgängliga.
+        public static void PrintExercise5() { }
+
+        // Skapa en ny klass kallad Order med fälten OrderId, Product, Quantity, och TotalPrice.
+        // Skapa en konstruktor som tar ett Product-objekt och en Quantity, och beräknar TotalPrice baserat på produktens pris och kvantitet.
+        // Lägg till logik i konstruktören för att förhindra att en order skapas om Quantity är mindre än 1.
+        // Testa klassen genom att skapa flera Order-objekt och verifiera att all logik fungerar korrekt.
+        public static void PrintExercise6()
+        {
+            var product1 = new Product(1, "Nocco", 20.0, 1);
+            var order = new Order(1, product1, 3);
+            Console.WriteLine(order.GetTotalPrice());
         }
     }
 }
