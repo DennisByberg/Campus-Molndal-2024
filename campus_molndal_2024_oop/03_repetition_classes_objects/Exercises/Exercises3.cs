@@ -29,5 +29,18 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             person2.Introduce();
             person3.Introduce();
         }
+
+        // Modifiera de överlagrade konstruktörerna i klassen Person för att använda this() för att undvika kodupprepning.
+        // Verifiera att objekten fortfarande skapas korrekt med hjälp av de modifierade konstruktörerna.
+        public static void PrintExercise3()
+        {
+            var person = new Person("Dennis", 30, "dennis@gmail.com");
+            var person2 = new Person("Sofia", 27);
+            var person3 = new Person();
+
+            person.Introduce();
+            person2.Introduce();
+            person3.Introduce();
+        }
     }
 }
