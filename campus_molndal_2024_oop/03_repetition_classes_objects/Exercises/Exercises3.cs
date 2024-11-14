@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
@@ -41,6 +42,14 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             person.Introduce();
             person2.Introduce();
             person3.Introduce();
+        }
+
+        //Lägg till validering i konstruktorerna i klassen Person för att säkerställa att Age alltid är ett positivt tal.
+        //Om ett ogiltigt värde ges, kasta ett undantag (ArgumentException).
+        //Skapa ett objekt med ett ogiltigt Age-värde och se vad som händer.
+        public static void PrintExercise4()
+        {
+            //var person = new Person("Dennis", -1, "dennis@gmail.com"); // THROWS.
         }
     }
 }
