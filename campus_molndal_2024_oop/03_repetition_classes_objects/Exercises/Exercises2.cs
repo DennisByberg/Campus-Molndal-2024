@@ -2,7 +2,7 @@
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
-    public static class Exercises
+    public static class Exercises2
     {
         // Skapa en klass kallad Book med följande fält: Title, Author, Pages.
         // Skapa en metod i klassen som skriver ut bokens titel och författare.

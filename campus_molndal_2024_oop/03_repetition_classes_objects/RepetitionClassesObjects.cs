@@ -5,11 +5,15 @@
         public static void RunExercises()
         {
             // 2.md
-            //Exercises.PrintExercise1();
-            //Exercises.PrintExercise2();
-            //Exercises.PrintExercise3();
-            //Exercises.PrintExercise4();
-            Exercises.PrintExercise5();
+            Exercises2.PrintExercise1();
+            //Exercises2.PrintExercise2();
+            //Exercises2.PrintExercise3();
+            //Exercises2.PrintExercise4();
+            //Exercises2.PrintExercise5();
+
+            // 3.md 
+            Exercises3.PrintExercise1();
+
         }
     }
 }
