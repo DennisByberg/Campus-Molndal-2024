@@ -4,7 +4,8 @@
     {
         public static void RunExercises()
         {
-            Exercises.PrintExercise1();
+            //Exercises.PrintExercise1();
+            Exercises.PrintExercise2();
         }
     }
 }
