@@ -12,8 +12,8 @@
             //Exercises2.PrintExercise5();
 
             // 3.md 
-            Exercises3.PrintExercise1();
-
+            //Exercises3.PrintExercise1();
+            Exercises3.PrintExercise2();
         }
     }
 }

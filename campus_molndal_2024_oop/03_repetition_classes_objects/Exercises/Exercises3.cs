@@ -15,5 +15,19 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             Console.WriteLine(person.Age);
             Console.WriteLine(person.Email);
         }
+
+        // Utöka klassen Person med en andra konstruktor som endast tar Name och Age, och tilldelar en standard Email.
+        // Skapa en tredje konstruktor som inte tar några parametrar och som sätter alla fält till standardvärden.
+        // Skapa flera objekt av klassen Person med hjälp av de olika konstruktörerna och skriv ut alla fält för att verifiera att konstruktörerna fungerar som förväntat.
+        public static void PrintExercise2()
+        {
+            var person = new Person("Dennis", 30, "dennis@gmail.com");
+            var person2 = new Person("Sofia", 27);
+            var person3 = new Person();
+
+            person.Introduce();
+            person2.Introduce();
+            person3.Introduce();
+        }
     }
 }
