@@ -40,7 +40,10 @@
 
             // 3.md
             //WhileLoopExercises.PrintExercise1();
-            WhileLoopExercises.PrintExercise2();
+            //WhileLoopExercises.PrintExercise2();
+
+            // 3.md
+            DoWhileLoopExercises.PrintExercise1();
         }
     }
 }

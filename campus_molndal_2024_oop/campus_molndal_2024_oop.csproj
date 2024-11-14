@@ -46,6 +46,7 @@
     <Compile Include="02_basiccsharp\BasicCSharp.cs" />
     <Compile Include="02_basiccsharp\Exercises\AdvancedTasksForFasterStudents.cs" />
     <Compile Include="02_basiccsharp\Exercises\AdvancedTasksForFasterStudents2.cs" />
+    <Compile Include="02_basiccsharp\Exercises\DoWhileLoopExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\ForLoopExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\IfElseExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\OperatorsAndExpressions.cs" />
