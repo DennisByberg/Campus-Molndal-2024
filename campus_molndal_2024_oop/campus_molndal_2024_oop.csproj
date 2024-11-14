@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="02_basiccsharp\BasicCSharp.cs" />
+    <Compile Include="02_basiccsharp\Exercises\AdvancedExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\AdvancedTasksForFasterStudents.cs" />
     <Compile Include="02_basiccsharp\Exercises\AdvancedTasksForFasterStudents2.cs" />
     <Compile Include="02_basiccsharp\Exercises\DoWhileLoopExercises.cs" />

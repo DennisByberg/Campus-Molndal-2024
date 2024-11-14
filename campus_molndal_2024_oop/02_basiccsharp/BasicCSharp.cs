@@ -22,7 +22,7 @@
             // 2.md 
             //IfElseExercises.PrintExercise1();
             //IfElseExercises.PrintExercise2();
-            //IfElseExercises.PrintExercise3();
+            //IfElseExercises.PrintExercise3(); 
 
             // 2.md
             //SwitchStatementsExercises.PrintExercise1();
@@ -44,7 +44,10 @@
 
             // 3.md
             //DoWhileLoopExercises.PrintExercise1();
-            DoWhileLoopExercises.PrintExercise2();
+            //DoWhileLoopExercises.PrintExercise2();
+
+            // 3.md
+            AdvancedExercises.PrintExercise1();
         }
     }
 }
