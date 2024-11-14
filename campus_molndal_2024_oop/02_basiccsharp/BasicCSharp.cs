@@ -59,7 +59,8 @@
             //ConstructorTasks.PrintExercise2();
 
             // 4.md
-            AdvancedExercises2.PrintExercise1();
+            //AdvancedExercises2.PrintExercise1();
+            AdvancedExercises2.PrintExercise2();
         }
     }
 }

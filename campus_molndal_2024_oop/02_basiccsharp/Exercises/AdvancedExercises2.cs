@@ -11,5 +11,14 @@
 
             rectangle.CalculateAndPrintArea();
         }
+
+        // Skapa en klass Circle med attributet Radius och en metod CalculateCircumference() som beräknar och returnerar cirkelns omkrets.
+        // Använd Math.PI för att få värdet av pi.
+        // Skapa ett objekt och beräkna omkretsen.
+        public static void PrintExercise2()
+        {
+            var circle = new Circle(10);
+            System.Console.WriteLine($"The circumference of the circle is {circle.CalculateCircumference()}");
+        }
     }
 }
