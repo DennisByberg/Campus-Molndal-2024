@@ -48,7 +48,10 @@
 
             // 3.md
             //AdvancedExercises.PrintExercise1();
-            AdvancedExercises.PrintExercise2();
+            //AdvancedExercises.PrintExercise2();
+
+            // 4.md
+
         }
     }
 }
