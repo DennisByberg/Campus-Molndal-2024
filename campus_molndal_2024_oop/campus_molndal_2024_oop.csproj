@@ -60,6 +60,9 @@
     <Compile Include="02_basiccsharp\Exercises\SwitchStatementsExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\VariablesAndDataTypes.cs" />
     <Compile Include="02_basiccsharp\Exercises\WhileLoopExercises.cs" />
+    <Compile Include="03_repetition_classes_objects\Classes\Book.cs" />
+    <Compile Include="03_repetition_classes_objects\Exercises\Exercises.cs" />
+    <Compile Include="03_repetition_classes_objects\RepetitionClassesObjects.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
