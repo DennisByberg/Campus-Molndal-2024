@@ -64,11 +64,13 @@
     <Compile Include="03_repetition_classes_objects\Classes\Dog.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Library.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Order.cs" />
+    <Compile Include="03_repetition_classes_objects\Classes\House.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Person.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Product.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises2.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises3.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises4.cs" />
+    <Compile Include="03_repetition_classes_objects\Helpers\ColorChanger.cs" />
     <Compile Include="03_repetition_classes_objects\RepetitionClassesObjects.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
