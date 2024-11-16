@@ -1,5 +1,4 @@
 ﻿using System;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
@@ -10,9 +9,21 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
         public string Genre = "Unknown";
         public int Pages = 0;
 
+
+
+        public Book(string title, string author)
+        {
+            Title = title;
+            Author = author;
+        }
+
+        public Book()
+        {
+        }
+
         public void PrintTitleAndAuthor()
         {
-            System.Console.WriteLine($"The book is {Title} and the author is {Author}");
+            Console.WriteLine($"The book is {Title} and the author is {Author}");
         }
 
         public double GetDaysToReadBook(int pagesReadEachDay)

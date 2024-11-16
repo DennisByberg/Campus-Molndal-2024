@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace campus_molndal_2024_oop._03_repetition_classes_objects.Classes
+namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
     public class Library
     {
@@ -30,5 +30,17 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects.Classes
                 index++;
             }
         }
+
+        // Skapa en klass kallad Library med en metod GetBook(string title) som returnerar ett Book-objekt.
+        public Book GetBook(string title)
+        {
+            foreach (var book in _library)
+            {
+                if (title == book.Title) return book;
+            }
+
+            return null;
+        }
+
     }
 }

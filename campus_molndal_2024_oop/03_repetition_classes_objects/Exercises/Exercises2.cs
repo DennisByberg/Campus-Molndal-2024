@@ -1,6 +1,4 @@
-﻿using campus_molndal_2024_oop._03_repetition_classes_objects.Classes;
-
-namespace campus_molndal_2024_oop._03_repetition_classes_objects
+﻿namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
     public static class Exercises2
     {

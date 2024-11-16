@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
@@ -32,6 +31,26 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             Console.WriteLine(house.Color); // Before
             ColorChanger.PaintHouseRed(house);
             Console.WriteLine(house.Color); // After paint
+        }
+
+        // Skapa en klass kallad Library med en metod GetBook(string title) som returnerar ett Book-objekt.
+        // Skapa en klass Book med fälten Title och Author.
+        // Skapa flera Book-objekt i Library och returnera ett objekt baserat på titeln som skickas till metoden.
+        // Skapa en Main-metod där du använder GetBook() för att hämta en bok och sedan skriver ut dess information.
+        public static void PrintExercise3()
+        {
+            var library = new Library();
+            var book1 = new Book("Title1", "Author1");
+            var book2 = new Book("Title2", "Author2");
+            var book3 = new Book("Title3", "Author3");
+
+            library.AddBook(book1);
+            library.AddBook(book2);
+            library.AddBook(book3);
+
+            library
+                .GetBook("Title2")
+                .PrintTitleAndAuthor();
         }
     }
 }
