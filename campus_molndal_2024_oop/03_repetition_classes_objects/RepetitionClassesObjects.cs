@@ -31,7 +31,8 @@
             //Exercises5.PrintExercise1();
             //Exercises5.PrintExercise2();
             //Exercises5.PrintExercise3();
-            Exercises5.PrintExercise4();
+            //Exercises5.PrintExercise4();
+            Exercises5.PrintExercise5();
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Net.NetworkInformation;
 using System.Security.Cryptography;
+using System.Text;
 using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
@@ -72,6 +73,30 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
 
             Console.WriteLine("\n--- After Teach ---");
             student.PrintStudentInfo();
+        }
+
+        // Skapa en klass Department som har en lista av Teacher-objekt.
+        // Lägg till metoder för att lägga till och ta bort lärare från avdelningen.
+        // Skapa flera Teacher-objekt och lägg till dem i en Department.
+        // Visa hur förändringar i en Teacher-objekts fält reflekteras i Department genom att använda olika referenser.
+        public static void PrintExercise5()
+        {
+            var department = new Department();
+            var teacher1 = new Teacher("Sune", "Programming");
+            var teacher2 = new Teacher("Polka", "Science");
+            var teacher3 = new Teacher("Gösta", "Math");
+
+            department.AddTeacher(teacher1);
+            department.AddTeacher(teacher2);
+            department.AddTeacher(teacher3);
+
+            Console.WriteLine("--- BEFORE REMOVE ---");
+            department.PrintAllTeacherNames();
+
+            department.RemoveTeacher(teacher3);
+
+            Console.WriteLine("\n--- AFTER REMOVE ---");
+            department.PrintAllTeacherNames();
         }
     }
 }
