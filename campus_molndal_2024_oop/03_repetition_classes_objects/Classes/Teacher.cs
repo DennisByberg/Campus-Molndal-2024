@@ -20,5 +20,10 @@
         {
             return _name;
         }
+
+        public string GetSubject()
+        {
+            return _subject;
+        }
     }
 }

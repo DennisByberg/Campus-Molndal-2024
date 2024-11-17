@@ -7,6 +7,7 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
         private int _studentId;
         private string _name;
         private string _grade;
+        private Teacher _teacher;
 
         public Student(int studentId, string name, string grade)
         {
@@ -20,6 +21,17 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
 
         public Student(string name) : this(0, name, "IG")
         { }
+
+        public Student(string name, Teacher teacher) : this(name)
+        {
+            _teacher = teacher;
+        }
+
+        public void PrintStudentNameAndTeacherInfo()
+        {
+            Console.WriteLine($"Student name: {_name}");
+            Console.WriteLine($"Teacher name: {_teacher.GetName()}, Teacher subject: {_teacher.GetSubject()}");
+        }
 
         public string GetName()
         {

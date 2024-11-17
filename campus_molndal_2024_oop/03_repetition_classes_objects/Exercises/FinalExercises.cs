@@ -107,5 +107,18 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
 
             car.PrintInfo();
         }
+
+        // Skapa klasserna Teacher och Student.
+        // I Teacher, inkludera fälten Name och Subject.
+        // I Student, inkludera fälten Name och en referens till en Teacher.
+        // Implementera en metod i Student som skriver ut studentens namn och lärarens namn och ämne.
+        // Skapa objekt av både Teacher och Student och länka dem, sedan anropa metoden i Student.
+        public static void PrintExercise9()
+        {
+            var teacher = new Teacher("Sune", "Catologi");
+            var student = new Student("Dennis", teacher);
+
+            student.PrintStudentNameAndTeacherInfo();
+        }
     }
 }
