@@ -1,4 +1,7 @@
-﻿namespace campus_molndal_2024_oop._03_repetition_classes_objects
+﻿using System;
+using System.Xml.Linq;
+
+namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
     public static class FinalExercises
     {
@@ -33,8 +36,20 @@
 
 
             student1.PrintStudentInfo();
-            System.Console.WriteLine("--- --- ---");
+            Console.WriteLine("--- --- ---");
             student2.PrintStudentInfo();
+        }
+
+        // Skapa en klass Rectangle med fälten Width och Height.
+        // Implementera en metod CalculateArea() som beräknar och returnerar rektangelns area.
+        // Implementera en metod CalculatePerimeter() som beräknar och returnerar rektangelns omkrets.
+        // Skapa ett objekt av Rectangle och anropa båda metoderna, skriv ut resultaten.
+        public static void PrintExercise5()
+        {
+            var rectangle = new Rectangle(15.1, 10.7);
+
+            Console.WriteLine($"Rectangle Area: {rectangle.CalculateArea()}");
+            Console.WriteLine($"Rectangle Perimeter: {rectangle.CalculatePerimeter()}");
         }
     }
 }

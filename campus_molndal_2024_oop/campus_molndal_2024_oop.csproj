@@ -72,6 +72,7 @@
     <Compile Include="03_repetition_classes_objects\Classes\House.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Person.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Product.cs" />
+    <Compile Include="03_repetition_classes_objects\Classes\Rectangle.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Student.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Teacher.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises2.cs" />
