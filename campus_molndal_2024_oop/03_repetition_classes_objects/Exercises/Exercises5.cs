@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Net.NetworkInformation;
 using System.Security.Cryptography;
+using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
@@ -38,6 +40,21 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             student2.PrintStudentInfo();
             Console.WriteLine("--- --- ---");
             student3.PrintStudentInfo();
+        }
+
+        // Utöka klassen Student med en metod Study() som ökar studentens betyg(Grade) med en viss poäng.
+        // Lägg till en metod PrintInfo() som skriver ut studentens namn och betyg.
+        // Skapa flera Student-objekt och använd Study()-metoden för att förbättra deras betyg, och sedan PrintInfo() för att visa resultaten.
+        public static void PrintExercise3()
+        {
+            var student = new Student(1, "Dennis", "G");
+
+            student.PrintStudentInfo();
+            student.Study();
+
+            Console.WriteLine("\n--- After Study ---\n");
+
+            student.PrintStudentInfo();
         }
     }
 }

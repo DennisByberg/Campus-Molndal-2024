@@ -26,6 +26,30 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             return _name;
         }
 
+        public void Study()
+        {
+            switch (_grade)
+            {
+                case "IG":
+                    _grade = "G";
+                    break;
+
+                case "G":
+                    _grade = "VG";
+                    break;
+
+                case "VG":
+                    _grade = "MVG";
+                    break;
+
+                case "MVG":
+                    break;
+
+                default:
+                    throw new ArgumentException("Invalid grade");
+            }
+        }
+
         public int GetStudentId()
         {
             return _studentId;
