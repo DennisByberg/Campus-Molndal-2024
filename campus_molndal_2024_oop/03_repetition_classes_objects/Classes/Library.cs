@@ -16,6 +16,9 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
 
         }
 
+        public Library(string name) : this(name, null)
+        { }
+
         public Library()
         {
             _library = new List<Book>();
@@ -39,6 +42,11 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
                 Console.WriteLine($"Book #{index}: {book.Title}");
                 index++;
             }
+        }
+
+        public void PrintInfoAboutBook(Book book)
+        {
+            book.PrintTitleAndAuthor();
         }
 
         public void PrintNameAndLocation()
