@@ -5,7 +5,8 @@
         public static void RunExercises()
         {
             // 1.md
-            MethodsAndFunctionsRepetition.PrintExercise1();
+            //MethodsAndFunctionsRepetition.PrintExercise1();
+            MethodsAndFunctionsRepetition.PrintExercise2();
         }
     }
 }
