@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Net.NetworkInformation;
-using System.Security.Cryptography;
-using System.Text;
-using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace campus_molndal_2024_oop._03_repetition_classes_objects
+﻿namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
     public class Product
     {
