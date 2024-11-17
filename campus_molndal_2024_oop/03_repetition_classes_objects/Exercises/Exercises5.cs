@@ -93,5 +93,41 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             Console.WriteLine("\n--- AFTER REMOVE ---");
             department.PrintAllTeacherNames();
         }
+
+        // Skapa klasser för Library, Book, och Member.
+        // Implementera följande funktioner:
+        // Library ska ha en lista av Book-objekt och metoder för att lägga till och ta bort böcker.
+        // Member ska kunna låna och återlämna böcker från Library.
+        // Skapa en metod i Library som visar alla tillgängliga böcker.
+        // Testa systemet genom att skapa ett bibliotek, flera böcker, och medlemmar som lånar och återlämnar böcker.
+        public static void PrintExercise6()
+        {
+            var library = new Library();
+            var book1 = new Book("book1", "author1");
+            var book2 = new Book("book2", "author2");
+            var book3 = new Book("book3", "author3");
+            var member = new Member("Dennis");
+
+            library.AddBook(book1);
+            library.AddBook(book2);
+            library.AddBook(book3);
+
+            Console.WriteLine("--- BEFORE LOANING BOOKS ---");
+            member.PrintLoanedBooks();
+
+            member.LoanBook(book1);
+            member.LoanBook(book2);
+
+            Console.WriteLine("\n--- AFTER LOANING BOOKS ---");
+            member.PrintLoanedBooks();
+
+            member.ReturnBook(book1);
+
+            Console.WriteLine("\n--- AFTER RETURN BOOK 1 ---");
+            member.PrintLoanedBooks();
+
+
+
+        }
     }
 }

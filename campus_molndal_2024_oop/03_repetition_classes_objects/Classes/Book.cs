@@ -25,6 +25,11 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             Year = year;
         }
 
+        public string GetTitle()
+        {
+            return Title;
+        }
+
         public void PrintTitleAndAuthor()
         {
             Console.WriteLine($"The book is {Title} and the author is {Author}");
