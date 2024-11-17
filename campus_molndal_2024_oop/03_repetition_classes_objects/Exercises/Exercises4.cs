@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
@@ -51,6 +52,27 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             library
                 .GetBook("Title2")
                 .PrintTitleAndAuthor();
+        }
+
+        // Skapa två objekt av klassen Person med samma fältvärden.
+        // Implementera en Equals()-metod i klassen Person för att jämföra om två Person-objekt har samma Name och Age.
+        // I Main, jämför de två objekten med == och.Equals() och förklara skillnaden.
+        public static void PrintExercise4()
+        {
+            var person1 = new Person("Dennis", 30);
+            var person2 = new Person("Dennis", 30);
+
+            // False
+            // The `==` operator checks if `person1` and `person2` refer to the same memory location (reference equality).
+            // Since `person1` and `person2` are two separate instances (different memory locations), this returns False,
+            // even though they have the same `Name` and `Age` values.
+            Console.WriteLine(person1 == person2);
+
+            // True
+            // The `.Equals()` method, after being overridden in the `Person` class, checks if the `Name` and `Age` properties
+            // of `person1` and `person2` are equal (value equality).
+            // Since both objects have the same values for `Name` ("Dennis") and `Age` (30), this comparison returns True.
+            Console.WriteLine(person1.Equals(person2));
         }
     }
 }

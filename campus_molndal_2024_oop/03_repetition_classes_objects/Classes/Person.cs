@@ -2,9 +2,6 @@
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {
-    //Lägg till validering i konstruktorerna i klassen Person för att säkerställa att Age alltid är ett positivt tal.
-    //Om ett ogiltigt värde ges, kasta ett undantag (ArgumentException).
-    //Skapa ett objekt med ett ogiltigt Age-värde och se vad som händer.
     public class Person
     {
         public string Name;
@@ -32,10 +29,25 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             : this("Unknown", 0, "Unknown")
         { }
 
-        // This method prints the person's introduction to the console.
+        // Overrides the default Equals method to compare two Person objects based on their Name and Age properties instead of their memory references.
+        public override bool Equals(object obj)
+        {
+            if (obj is Person other)
+            {
+                return Name == other.Name && Age == other.Age;
+            }
+            return false;
+        }
+        public override int GetHashCode()
+        {
+            throw new NotImplementedException();
+        }
+
+        // Prints the person's introduction to the console.
         public void Introduce()
         {
             Console.WriteLine($"My name is {Name}, im {Age} years old an my mail is {Email} ");
         }
+
     }
 }
