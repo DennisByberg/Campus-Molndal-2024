@@ -62,6 +62,7 @@
     <Compile Include="02_basiccsharp\Exercises\WhileLoopExercises.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\BankAccount.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Book.cs" />
+    <Compile Include="03_repetition_classes_objects\Classes\Car.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Classroom.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Department.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Dog.cs" />

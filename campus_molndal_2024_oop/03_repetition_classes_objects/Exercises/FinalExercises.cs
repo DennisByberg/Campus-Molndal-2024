@@ -7,5 +7,11 @@
             var dog = new Dog("Sune", 5);
             dog.PrintNameAndAge();
         }
+
+        public static void PrintExercise2()
+        {
+            var car = new Car("Volvo", "XC90", 2019);
+            car.PrintInfo();
+        }
     }
 }
