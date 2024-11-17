@@ -94,5 +94,18 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             bankAccount.Deposit(25_000);
             Console.WriteLine($"After Deposit 25_000: {bankAccount.GetBalance()}");
         }
+
+        // Skapa en klass Engine med fälten Horsepower och Type.
+        // Skapa en klass Car med fälten Brand, Model, Year, och en Engine.
+        // Implementera en konstruktor i Car som tar alla fälten som parametrar och länkar en Engine till Car.
+        // Implementera en metod i Car som skriver ut bilens och motorns information.
+        // Skapa ett Car-objekt och anropa metoden för att visa all information.
+        public static void PrintExercise8()
+        {
+            var engine = new Engine(140, "Normal");
+            var car = new Car("Ford", "Focus", 2023, engine);
+
+            car.PrintInfo();
+        }
     }
 }
