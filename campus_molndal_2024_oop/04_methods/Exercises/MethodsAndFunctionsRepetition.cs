@@ -21,9 +21,16 @@ namespace campus_molndal_2024_oop._04_methods
         // Lägg till en metod Introduce som tar parametrar för namn, ålder och staden där personen bor, och skriver ut en introduktion.
         public static void PrintExercise2()
         {
-            var person = new Person();
-            person.Greet("Sofia");
-            person.Introduce("Dennis", 30, "Kållered");
+            Person.Greet("Sofia");
+            Person.Introduce("Dennis", 30, "Kållered");
+        }
+
+        // Skapa en klass Circle med en metod CalculateArea som tar radien som parameter och returnerar arean.
+        // Lägg till en metod CalculateCircumference som beräknar och returnerar omkretsen.
+        public static void PrintExercise3()
+        {
+            Console.WriteLine(Circle.CalculateArea(10));
+            Console.WriteLine(Circle.CalculateCircumference(10));
         }
     }
 }
