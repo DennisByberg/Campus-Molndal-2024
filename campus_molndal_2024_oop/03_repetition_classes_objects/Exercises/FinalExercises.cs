@@ -25,5 +25,16 @@
 
             library.PrintInfoAboutBook(book1);
         }
+
+        public static void PrintExercise4()
+        {
+            var student1 = new Student(1, "Dennis", "MVG");
+            var student2 = new Student(2, "Sofia");
+
+
+            student1.PrintStudentInfo();
+            System.Console.WriteLine("--- --- ---");
+            student2.PrintStudentInfo();
+        }
     }
 }
