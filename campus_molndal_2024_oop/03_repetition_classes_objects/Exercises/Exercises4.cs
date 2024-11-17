@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
-using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
 {

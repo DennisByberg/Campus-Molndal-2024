@@ -73,6 +73,7 @@
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises2.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises3.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises4.cs" />
+    <Compile Include="03_repetition_classes_objects\Exercises\Exercises5.cs" />
     <Compile Include="03_repetition_classes_objects\Helpers\ColorChanger.cs" />
     <Compile Include="03_repetition_classes_objects\RepetitionClassesObjects.cs" />
     <Compile Include="Program.cs" />
