@@ -86,12 +86,17 @@
     <Compile Include="03_repetition_classes_objects\Exercises\FinalExercises.cs" />
     <Compile Include="03_repetition_classes_objects\Helpers\ColorChanger.cs" />
     <Compile Include="03_repetition_classes_objects\RepetitionClassesObjects.cs" />
+    <Compile Include="04_methods\Exercises\MethodsAndFunctionsRepetition.cs" />
+    <Compile Include="04_methods\Helpers\MathHelper.cs" />
+    <Compile Include="04_methods\Methods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="04_methods\Classes\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
