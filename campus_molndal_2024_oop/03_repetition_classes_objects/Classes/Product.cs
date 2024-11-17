@@ -24,6 +24,12 @@
         public Product(int id, string name)
             : this(id, name, 0.0, 0) { }
 
+        public Product(string name, double price)
+        {
+            Name = name;
+            Price = price;
+        }
+
         public double GetPrice()
         {
             return Price;

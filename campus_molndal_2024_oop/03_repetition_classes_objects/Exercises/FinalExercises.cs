@@ -120,5 +120,20 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
 
             student.PrintStudentNameAndTeacherInfo();
         }
+
+        // Skapa klasserna Product, Customer, och Order.
+        // I Product, inkludera fälten ProductName och Price.
+        // I Customer, inkludera fälten CustomerName och en referens till en Order.
+        // I Order, inkludera fälten OrderId, Product, och Quantity.
+        // Implementera en metod i Order som beräknar och returnerar totalpriset för beställningen (Price* Quantity).
+        // Skapa objekt av alla tre klasserna, länka dem, och beräkna totalpriset för en beställning.
+        public static void PrintExercise10()
+        {
+            var product = new Product("Nocco", 20.0);
+            var order = new Order(1, product, 24);
+            var customer = new Customer("Dennis", order);
+
+            Console.WriteLine($"Total price for this order by {customer.CustomerName} is: {order.GetTotalPrice()}:-");
+        }
     }
 }

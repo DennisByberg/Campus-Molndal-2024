@@ -66,6 +66,7 @@
     <Compile Include="03_repetition_classes_objects\Classes\Book2.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Car.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Classroom.cs" />
+    <Compile Include="03_repetition_classes_objects\Classes\Customer.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Department.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Dog.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Engine.cs" />
