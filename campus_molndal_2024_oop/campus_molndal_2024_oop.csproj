@@ -90,6 +90,7 @@
     <Compile Include="04_methods\Classes\Person.cs" />
     <Compile Include="04_methods\Exercises\MethodsAndFunctionsRepetition.cs" />
     <Compile Include="04_methods\Helpers\MathHelper.cs" />
+    <Compile Include="04_methods\Helpers\PrinterHelper.cs" />
     <Compile Include="04_methods\Methods.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

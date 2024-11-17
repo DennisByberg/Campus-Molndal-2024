@@ -32,5 +32,13 @@ namespace campus_molndal_2024_oop._04_methods
             Console.WriteLine(Circle.CalculateArea(10));
             Console.WriteLine(Circle.CalculateCircumference(10));
         }
+
+        // Skapa en klass Printer med en metod Print som överlagras för att skriva ut olika typer av data(strängar, heltal och flyttal).
+        public static void PrintExercise4()
+        {
+            PrinterHelper.Print("Hello");
+            PrinterHelper.Print(1);
+            PrinterHelper.Print(1.123);
+        }
     }
 }

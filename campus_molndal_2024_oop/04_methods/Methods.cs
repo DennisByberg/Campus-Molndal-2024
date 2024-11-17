@@ -7,7 +7,8 @@
             // 1.md
             //MethodsAndFunctionsRepetition.PrintExercise1();
             //MethodsAndFunctionsRepetition.PrintExercise2();
-            MethodsAndFunctionsRepetition.PrintExercise3();
+            //MethodsAndFunctionsRepetition.PrintExercise3();
+            MethodsAndFunctionsRepetition.PrintExercise4();
         }
     }
 }
