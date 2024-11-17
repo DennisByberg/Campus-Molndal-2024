@@ -33,12 +33,21 @@ namespace campus_molndal_2024_oop._04_methods
             Console.WriteLine(Circle.CalculateCircumference(10));
         }
 
-        // Skapa en klass Printer med en metod Print som överlagras för att skriva ut olika typer av data(strängar, heltal och flyttal).
+        // Skapa en klass Printer med en metod Print som överlagras för att skriva ut olika typer av data
+        // (strängar, heltal och flyttal).
         public static void PrintExercise4()
         {
             PrinterHelper.Print("Hello");
             PrinterHelper.Print(1);
             PrinterHelper.Print(1.123);
+        }
+
+        // Skapa en klass TemperatureConverter med en metod ToCelsius som omvandlar
+        // Fahrenheit till Celsius och en metod ToFahrenheit som omvandlar Celsius till Fahrenheit.
+        public static void PrintExercise5()
+        {
+            Console.WriteLine(TemperatureConverter.FahrenheitToCelsius(30.1));
+            Console.WriteLine(TemperatureConverter.CelsiusToFahrenheit(0));
         }
     }
 }
