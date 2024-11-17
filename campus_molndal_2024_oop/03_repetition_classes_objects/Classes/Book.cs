@@ -6,7 +6,7 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
     {
         public string Title = "Unknown";
         public string Author = "Unknown";
-        public int PublicationYear = 0;
+        public int Year = 0;
         public string Genre = "Unknown";
         public int Pages = 0;
 
@@ -20,9 +20,9 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
         {
         }
 
-        public Book(string title, string author, int publicationYear) : this(title, author)
+        public Book(string title, string author, int year) : this(title, author)
         {
-            PublicationYear = publicationYear;
+            Year = year;
         }
 
         public string GetTitle()
