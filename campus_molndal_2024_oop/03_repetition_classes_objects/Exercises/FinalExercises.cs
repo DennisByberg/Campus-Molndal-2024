@@ -78,5 +78,21 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
 
             book.PrintTitleAndAuthorInfo();
         }
+
+        // Skapa en klass BankAccount med fälten AccountNumber och Balance.
+        // Implementera en metod Deposit(double amount) som ökar saldot med det angivna beloppet.
+        // Implementera en metod Withdraw(double amount) som minskar saldot med det angivna beloppet om det finns tillräckligt med pengar, annars skriv ut ett felmeddelande.
+        // Skapa ett BankAccount-objekt och testa båda metoderna.
+        public static void PrintExercise7()
+        {
+            var bankAccount = new BankAccount("123123123", 10_000);
+            Console.WriteLine($"After Instantiation: {bankAccount.GetBalance()}");
+
+            bankAccount.Withdraw(1000);
+            Console.WriteLine($"After Withdraw 1000: {bankAccount.GetBalance()}");
+
+            bankAccount.Deposit(25_000);
+            Console.WriteLine($"After Deposit 25_000: {bankAccount.GetBalance()}");
+        }
     }
 }
