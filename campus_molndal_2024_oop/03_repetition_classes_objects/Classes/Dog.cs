@@ -17,5 +17,10 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
         {
             Console.WriteLine("Woff!!");
         }
+
+        public void PrintNameAndAge()
+        {
+            Console.WriteLine($"Name: {Name}, Age: {Age}");
+        }
     }
 }
