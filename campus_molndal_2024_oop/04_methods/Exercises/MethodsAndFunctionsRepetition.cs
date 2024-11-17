@@ -49,5 +49,17 @@ namespace campus_molndal_2024_oop._04_methods
             Console.WriteLine(TemperatureConverter.FahrenheitToCelsius(30.1));
             Console.WriteLine(TemperatureConverter.CelsiusToFahrenheit(0));
         }
+
+        // Skapa en C#-klass med namnet Calculator.
+        // I klassen, definiera metoderna Add, Subtract, Multiply, och Divide,
+        // som alla tar två int-parametrar och returnerar resultatet som en int.
+        // Skapa en Main-metod där du anropar varje metod och skriver ut resultaten.
+        public static void PrintExercise6()
+        {
+            Console.WriteLine(Calculator.Add(10, 10));
+            Console.WriteLine(Calculator.Subtract(10, 5));
+            Console.WriteLine(Calculator.Multiply(10, 2));
+            Console.WriteLine(Calculator.Divide(20, 2));
+        }
     }
 }
