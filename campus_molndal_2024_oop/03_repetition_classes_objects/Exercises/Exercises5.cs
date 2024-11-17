@@ -56,5 +56,22 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
 
             student.PrintStudentInfo();
         }
+
+        // Skapa en klass Teacher med fält för Name och Subject.
+        // Skapa en metod Teach(Student student) som tar en Student-objektreferens och använder Study()-metoden för att öka studentens betyg.
+        // Skapa objekt av Teacher och Student och visa hur läraren kan påverka studentens betyg genom att använda metoden Teach()
+        public static void PrintExercise4()
+        {
+            var student = new Student(1, "Dennis", "G");
+            var teacher = new Teacher("Sune", "Programming");
+
+            Console.WriteLine("--- Before Teach ---");
+            student.PrintStudentInfo();
+
+            teacher.Teach(student);
+
+            Console.WriteLine("\n--- After Teach ---");
+            student.PrintStudentInfo();
+        }
     }
 }

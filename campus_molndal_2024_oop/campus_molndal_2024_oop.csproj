@@ -70,6 +70,7 @@
     <Compile Include="03_repetition_classes_objects\Classes\Person.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Product.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Student.cs" />
+    <Compile Include="03_repetition_classes_objects\Classes\Teacher.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises2.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises3.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises4.cs" />
