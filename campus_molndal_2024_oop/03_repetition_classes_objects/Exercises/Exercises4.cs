@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._03_repetition_classes_objects
@@ -73,6 +75,48 @@ namespace campus_molndal_2024_oop._03_repetition_classes_objects
             // of `person1` and `person2` are equal (value equality).
             // Since both objects have the same values for `Name` ("Dennis") and `Age` (30), this comparison returns True.
             Console.WriteLine(person1.Equals(person2));
+        }
+
+        // Skapa en klass BankAccount med fälten AccountNumber och Balance.
+        // Skapa en metod TransferFunds(BankAccount from, BankAccount to, double amount) som överför pengar från ett konto till ett annat.
+        // Testa att överföra pengar mellan två olika BankAccount-objekt och visa hur referenserna ändrar objektens tillstånd.
+        public static void PrintExercise5()
+        {
+            var account1 = new BankAccount("123123123", 5000);
+            var account2 = new BankAccount("954534822", 3000);
+
+            Console.WriteLine($"account1 balance: {account1.GetBalance()}");
+            Console.WriteLine($"account2 balance: {account2.GetBalance()}");
+
+            account1.TransferFunds(account1, account2, 100);
+
+            Console.WriteLine($"account1 balance: {account1.GetBalance()}");
+            Console.WriteLine($"account2 balance: {account2.GetBalance()}");
+        }
+        // Skapa en klass Classroom som innehåller en lista över Student-objekt.
+        // Skapa metoder i Classroom för att lägga till och ta bort Student-objekt från listan.
+        // Implementera en metod som returnerar en referens till en Student-objekt baserat på studentens namn.
+        // Testa klassen genom att skapa flera Student-objekt, lägga till dem i en Classroom, och sedan hämta en student från listan för att ändra deras information.
+        public static void PrintExercise6()
+        {
+            var classroom = new Classroom();
+            var student1 = new Student("Dennis");
+            var student2 = new Student("Sofia");
+            var student3 = new Student("Matteo");
+
+            classroom.AddStudent(student1);
+            classroom.AddStudent(student2);
+            classroom.AddStudent(student3);
+
+            classroom.PrintAllStudentsName();
+
+            classroom
+                .GetStudent("Dennis")
+                .UpdateName("Dennis2");
+
+            Console.WriteLine();
+
+            classroom.PrintAllStudentsName();
         }
     }
 }

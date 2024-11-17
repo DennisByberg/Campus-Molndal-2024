@@ -60,13 +60,16 @@
     <Compile Include="02_basiccsharp\Exercises\SwitchStatementsExercises.cs" />
     <Compile Include="02_basiccsharp\Exercises\VariablesAndDataTypes.cs" />
     <Compile Include="02_basiccsharp\Exercises\WhileLoopExercises.cs" />
+    <Compile Include="03_repetition_classes_objects\Classes\BankAccount.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Book.cs" />
+    <Compile Include="03_repetition_classes_objects\Classes\Classroom.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Dog.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Library.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Order.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\House.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Person.cs" />
     <Compile Include="03_repetition_classes_objects\Classes\Product.cs" />
+    <Compile Include="03_repetition_classes_objects\Classes\Student.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises2.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises3.cs" />
     <Compile Include="03_repetition_classes_objects\Exercises\Exercises4.cs" />
