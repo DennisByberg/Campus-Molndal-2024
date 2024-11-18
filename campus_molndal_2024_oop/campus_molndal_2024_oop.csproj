@@ -86,6 +86,7 @@
     <Compile Include="03_repetition_classes_objects\Exercises\FinalExercises.cs" />
     <Compile Include="03_repetition_classes_objects\Helpers\ColorChanger.cs" />
     <Compile Include="03_repetition_classes_objects\RepetitionClassesObjects.cs" />
+    <Compile Include="04_methods\Classes\Book.cs" />
     <Compile Include="04_methods\Classes\Car.cs" />
     <Compile Include="04_methods\Classes\Circle.cs" />
     <Compile Include="04_methods\Classes\Ebook.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="04_methods\Classes\Person.cs" />
     <Compile Include="04_methods\Classes\Student.cs" />
     <Compile Include="04_methods\Exercises\Exercises2.cs" />
+    <Compile Include="04_methods\Exercises\Exercises3.cs" />
     <Compile Include="04_methods\Exercises\MethodsAndFunctionsRepetition.cs" />
     <Compile Include="04_methods\Helpers\Calculator.cs" />
     <Compile Include="04_methods\Helpers\MathHelper.cs" />
