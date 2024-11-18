@@ -10,5 +10,15 @@ namespace campus_molndal_2024_oop._04_methods
             car.SetModel("Focus");
             Console.WriteLine(car.GetModel());
         }
+
+        public static void PrintExercise2()
+        {
+            var student = new Student();
+            student.SetAge(10);
+            student.SetName("Dennis");
+            student.SetGrade('A');
+
+            Console.WriteLine($"Name: {student.GetName()}, Age: {student.GetAge()}, Grade: {student.GetGrade()}");
+        }
     }
 }

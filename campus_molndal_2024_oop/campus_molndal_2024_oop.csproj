@@ -89,6 +89,7 @@
     <Compile Include="04_methods\Classes\Car.cs" />
     <Compile Include="04_methods\Classes\Circle.cs" />
     <Compile Include="04_methods\Classes\Person.cs" />
+    <Compile Include="04_methods\Classes\Student.cs" />
     <Compile Include="04_methods\Exercises\Exercises2.cs" />
     <Compile Include="04_methods\Exercises\MethodsAndFunctionsRepetition.cs" />
     <Compile Include="04_methods\Helpers\Calculator.cs" />
