@@ -1,6 +1,6 @@
 ﻿namespace campus_molndal_2024_oop._05_datatypes
 {
-    public static class NumberHelper
+    public static class ArrayHelper
     {
         public static int GetBiggestNumberInArray(int[] arr)
         {

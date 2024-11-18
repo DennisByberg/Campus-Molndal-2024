@@ -112,7 +112,7 @@
     <Compile Include="04_methods\Methods.cs" />
     <Compile Include="05_datatypes\Datatypes.cs" />
     <Compile Include="05_datatypes\Exercises\Exercises1.cs" />
-    <Compile Include="05_datatypes\Helpers\NumberHelper.cs" />
+    <Compile Include="05_datatypes\Helpers\ArrayHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
