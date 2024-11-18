@@ -2,7 +2,6 @@
 
 namespace campus_molndal_2024_oop._04_methods
 {
-    // Lägg till en metod Modulus i Calculator-klassen som returnerar resten från en heltalsdivision.
     public static class Calculator
     {
         public static int Add(int a, int b) => a + b;

@@ -13,7 +13,7 @@
             //MethodsAndFunctionsRepetition.PrintExercise6();
             //MethodsAndFunctionsRepetition.PrintExercise7();
             //MethodsAndFunctionsRepetition.PrintExercise8();
-            MethodsAndFunctionsRepetition.PrintExercise9();
+            //MethodsAndFunctionsRepetition.PrintExercise9();
         }
     }
 }
