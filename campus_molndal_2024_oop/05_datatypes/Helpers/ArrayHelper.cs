@@ -64,5 +64,29 @@
 
             return evenNumberCounter;
         }
+
+        public static int CountOccurrences(int[] arr, int target)
+        {
+            int count = 0;
+            foreach (var num in arr)
+            {
+                if (num == target)
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        public static int LinearSearch(int[] arr, int target)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] == target)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
     }
 }

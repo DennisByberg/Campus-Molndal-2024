@@ -26,8 +26,10 @@
 
             // Hoppar över 5.md eftersom det är för inlämning.
 
-            // 6.md
-            FInalExercises.PrintExercise1();
+            // exercises.md
+            //FInalExercises.PrintExercise1();
+            //FInalExercises.PrintExercise2();
+            FInalExercises.PrintExercise3();
         }
     }
 }

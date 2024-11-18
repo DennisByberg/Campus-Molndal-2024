@@ -111,6 +111,8 @@
     <Compile Include="04_methods\Helpers\TemperatureConverter.cs" />
     <Compile Include="04_methods\Methods.cs" />
     <Compile Include="05_datatypes\Classes\Animal.cs" />
+    <Compile Include="05_datatypes\Classes\Book.cs" />
+    <Compile Include="05_datatypes\Classes\Library.cs" />
     <Compile Include="05_datatypes\Classes\Player.cs" />
     <Compile Include="05_datatypes\Classes\School.cs" />
     <Compile Include="05_datatypes\Classes\Team.cs" />
@@ -123,6 +125,7 @@
     <Compile Include="05_datatypes\Exercises\FInalExercises.cs" />
     <Compile Include="05_datatypes\Helpers\ArrayHelper.cs" />
     <Compile Include="05_datatypes\Helpers\ListHelper.cs" />
+    <Compile Include="05_datatypes\Helpers\PrintHelper.cs" />
     <Compile Include="05_datatypes\Helpers\SortHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
