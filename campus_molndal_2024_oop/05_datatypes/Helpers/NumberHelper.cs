@@ -25,5 +25,19 @@
 
             return smallestNumber;
         }
+
+        public static int[] ReverseArray(int[] arr)
+        {
+            int[] newArr = new int[arr.Length];
+            int index = 0;
+
+            for (int i = arr.Length - 1; i >= 0; i--)
+            {
+                newArr[index] = arr[i];
+                index++;
+            }
+
+            return newArr;
+        }
     }
 }

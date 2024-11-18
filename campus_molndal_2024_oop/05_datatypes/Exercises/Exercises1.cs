@@ -1,5 +1,4 @@
 ﻿using System;
-using static System.Net.WebRequestMethods;
 
 namespace campus_molndal_2024_oop._05_datatypes
 {
@@ -37,6 +36,21 @@ namespace campus_molndal_2024_oop._05_datatypes
             Console.WriteLine("\n--- numbers 2 ---");
             Console.WriteLine($"biggestNumber: {biggestNumber2}");
             Console.WriteLine($"smallestNumber: {smallestNumber2}");
+        }
+
+        public static void PrintExercise3()
+        {
+            //Skapa en array med heltal.
+            int[] numbers = { 1, 2, 3, 4, 5 };
+
+            Console.WriteLine("--- ORIGINAL ---");
+            foreach (var number in numbers)
+                Console.WriteLine(number);
+
+            // Skriv en metod som skriver ut elementen i arrayen i omvänd ordning.
+            Console.WriteLine("\n--- REVERSED ---");
+            foreach (var number in NumberHelper.ReverseArray(numbers))
+                Console.WriteLine(number);
         }
     }
 }
