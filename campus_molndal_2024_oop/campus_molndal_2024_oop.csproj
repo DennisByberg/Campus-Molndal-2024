@@ -114,6 +114,7 @@
     <Compile Include="05_datatypes\Exercises\Exercises1.cs" />
     <Compile Include="05_datatypes\Exercises\Exercises2.cs" />
     <Compile Include="05_datatypes\Helpers\ArrayHelper.cs" />
+    <Compile Include="05_datatypes\Helpers\ListHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
