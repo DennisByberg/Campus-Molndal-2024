@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using System.Text;
 
 namespace campus_molndal_2024_oop._04_methods
@@ -27,6 +28,21 @@ namespace campus_molndal_2024_oop._04_methods
 
             Console.WriteLine(person1.GetName());
             Console.WriteLine(person2.GetName());
+        }
+
+        // Skapa en klass Car som har privata variabler för märke, modell och år.Implementera flera konstruktorer: en utan parametrar,
+        // en som accepterar bara märke och modell, och en som accepterar alla tre variablerna.
+        // Lägg till en metod DisplayCarInfo som skriver ut bilens information.
+        // I Main-metoden, skapa instanser av Car med olika konstruktorer och anropa DisplayCarInfo för att visa bilens information.
+        public static void PrintExercise3()
+        {
+            var car1 = new Car();
+            var car2 = new Car("Ford", "Focus");
+            var car3 = new Car("Tesla", "Cybertruck", 2024);
+
+            car1.DisplayInfo();
+            car2.DisplayInfo();
+            car3.DisplayInfo();
         }
     }
 }
