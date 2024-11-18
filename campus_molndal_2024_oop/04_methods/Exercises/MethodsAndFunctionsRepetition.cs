@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace campus_molndal_2024_oop._04_methods
 {
@@ -60,6 +62,24 @@ namespace campus_molndal_2024_oop._04_methods
             Console.WriteLine(Calculator.Subtract(10, 5));
             Console.WriteLine(Calculator.Multiply(10, 2));
             Console.WriteLine(Calculator.Divide(20, 2));
+        }
+
+        // Skapa en metod CalculateArea som tar två double-parametrar, length och width, och returnerar arean som en double.
+        // Skapa en metod CalculatePerimeter som tar samma parametrar och returnerar omkretsen som en double.
+        // Anropa dessa metoder från Main och skriv ut resultaten.
+        public static void PrintExercise7()
+        {
+            Console.WriteLine(Calculator.CalculateRectangleArea(10, 5));
+            Console.WriteLine(Calculator.CalculateRectanglePerimeter(10, 5));
+        }
+
+        // Definiera en metod PrintMessage som tar en string och skriver ut den till konsolen.
+        // Skapa en överlagrad version av PrintMessage som tar två string-parametrar och skriver ut dem på samma rad.
+        // Anropa båda versionerna av PrintMessage från Main.
+        public static void PrintExercise8()
+        {
+            PrinterHelper.Print("Hello");
+            PrinterHelper.Print("Hello", "World");
         }
     }
 }

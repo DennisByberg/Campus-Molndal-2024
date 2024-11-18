@@ -9,6 +9,11 @@ namespace campus_molndal_2024_oop._04_methods
             Console.WriteLine(x);
         }
 
+        public static void Print(string x, string y)
+        {
+            Console.WriteLine(x, y);
+        }
+
         public static void Print(int x)
         {
             Console.WriteLine(x);
