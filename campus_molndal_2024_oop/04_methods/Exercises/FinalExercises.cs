@@ -163,5 +163,34 @@ namespace campus_molndal_2024_oop._04_methods
             Console.WriteLine("\n--- AFTER 50% DISCOUNT ---");
             invoice1.DisplayDetails();
         }
+
+        // Implementera en rekursiv lösning för problemet "Tornet i Hanoi".
+        // Metoden ska ta antalet skivor och tre staplar som parametrar och skriva ut stegen för att flytta skivorna från den första stapeln till den sista.
+        // Testa metoden i Main-metoden med olika antal skivor(t.ex. 3, 4, 5).
+        public static void PrintExercise10()
+        {
+            void SolveHanoi(int n, char fromPeg, char toPeg, char auxPeg)
+            {
+                // Basfall: Om det bara finns en skiva, flytta den direkt
+                if (n == 1)
+                {
+                    Console.WriteLine($"Flytta skiva 1 från {fromPeg} till {toPeg}");
+                    return;
+                }
+
+                // Flytta n-1 skivor från fromPeg till auxPeg med hjälp av toPeg
+                SolveHanoi(n - 1, fromPeg, auxPeg, toPeg);
+
+                // Flytta den sista skivan från fromPeg till toPeg
+                Console.WriteLine($"Flytta skiva {n} från {fromPeg} till {toPeg}");
+
+                // Flytta n-1 skivor från auxPeg till toPeg med hjälp av fromPeg
+                SolveHanoi(n - 1, auxPeg, toPeg, fromPeg);
+            }
+
+            const int antalSkivor = 3;
+            Console.WriteLine($"Löser Tornet i Hanoi för {antalSkivor} skivor:");
+            SolveHanoi(antalSkivor, 'A', 'C', 'B');
+        }
     }
 }
