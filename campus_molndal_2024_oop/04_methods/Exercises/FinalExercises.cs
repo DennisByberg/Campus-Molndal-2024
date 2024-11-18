@@ -44,5 +44,13 @@ namespace campus_molndal_2024_oop._04_methods
             car2.DisplayInfo();
             car3.DisplayInfo();
         }
+
+        // Implementera en rekursiv metod som tar ett heltal n som parameter och returnerar summan av alla heltal från 1 till n.
+        // Testa metoden i Main-metoden med olika värden av n.
+        public static void PrintExercise4()
+        {
+            Console.WriteLine(MathHelper.SumNumbers(3)); // 6
+            Console.WriteLine(MathHelper.SumNumbers(5)); // 15
+        }
     }
 }
