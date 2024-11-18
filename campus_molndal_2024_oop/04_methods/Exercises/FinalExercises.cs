@@ -1,4 +1,8 @@
-﻿using System;
+﻿using campus_molndal_2024_oop._03_repetition_classes_objects;
+using System;
+using System.Text;
+using System.Xml.Linq;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace campus_molndal_2024_oop._04_methods
 {
@@ -104,6 +108,34 @@ namespace campus_molndal_2024_oop._04_methods
             int target1 = 5;
             int result1 = BinarySearch(arr1, 0, arr1.Length - 1, target1);
             Console.WriteLine(result1 != -1 ? $"Found at index {result1}" : "Not found");
+        }
+
+
+        // Skapa en klass Student med privata variabler för namn, ålder och betyg.
+        // Implementera publika getter- och setter-metoder med validering(t.ex.åldern måste vara ett positivt heltal, och betyget måste vara mellan A och F).
+        // Skapa en StudentRegister-klass som kan hålla flera Student-objekt i en lista.
+        // Implementera metoder för att lägga till en student, ta bort en student baserat på namn, och för att visa alla studenter i registret.
+        // I Main-metoden, testa att lägga till och ta bort studenter samt att visa studentregistret.
+        public static void PrintExercise7()
+        {
+            var studentRegister = new StudentRegister();
+            var student1 = new Student("Dennis", 'A');
+            var student2 = new Student("Sofia", 'B');
+            var student3 = new Student("Matteo", 'C');
+            var student4 = new Student("Sune", 'D');
+
+            studentRegister.AddStudent(student1);
+            studentRegister.AddStudent(student2);
+            studentRegister.AddStudent(student3);
+            studentRegister.AddStudent(student4);
+
+            Console.WriteLine("--- AFTER 4 ADDS ---");
+            studentRegister.DisplayAllStudents();
+
+            studentRegister.RemoveStudent("Sune");
+
+            Console.WriteLine("\n--- AFTER REMOVE SUNE ---");
+            studentRegister.DisplayAllStudents();
         }
     }
 }
