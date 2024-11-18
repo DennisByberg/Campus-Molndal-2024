@@ -1,8 +1,5 @@
-﻿using campus_molndal_2024_oop._04_methods;
-using System;
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
-using System.Security.Cryptography;
 
 namespace campus_molndal_2024_oop._05_datatypes
 {
@@ -41,6 +38,23 @@ namespace campus_molndal_2024_oop._05_datatypes
 
             //Skriv en metod för att hitta och returnera det minsta värdet i listan.
             Console.WriteLine($"Smallest: {ListHelper.GetSmallestIntInList(numbers)}");
+        }
+
+        public static void PrintExercise3()
+        {
+            // Skapa en lista med minst fem strängar.
+            var names = new List<string> { "Dennis", "Sofia", "Matteo", "Sune", "Polka" };
+
+            Console.WriteLine($"Before: {string.Join(", ", names)}");
+
+            // Ta bort ett element från listan baserat på dess index.
+            names.RemoveAt(4);
+            names.RemoveAt(1);
+
+            Console.WriteLine();
+
+            // Skriv ut listans innehåll både före och efter borttagningen.
+            Console.WriteLine($"After: {string.Join(", ", names)}");
         }
     }
 }
