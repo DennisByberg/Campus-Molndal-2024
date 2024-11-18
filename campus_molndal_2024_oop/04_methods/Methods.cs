@@ -40,7 +40,8 @@
             //FinalExercises.PrintExercise5();
             //FinalExercises.PrintExercise6();
             //FinalExercises.PrintExercise7();
-            FinalExercises.PrintExercise8();
+            //FinalExercises.PrintExercise8();
+            FinalExercises.PrintExercise9();
         }
     }
 }

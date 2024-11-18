@@ -1,9 +1,4 @@
-﻿using campus_molndal_2024_oop._03_repetition_classes_objects;
-using System;
-using System.Security.Cryptography;
-using System.Text;
-using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
+﻿using System;
 
 namespace campus_molndal_2024_oop._04_methods
 {
@@ -146,6 +141,27 @@ namespace campus_molndal_2024_oop._04_methods
         {
             for (int i = 0; i < 10; i++)
                 Console.WriteLine($"Fibonacci({i}) = {MathHelper.Fibonacci(i)}");
+        }
+
+        // Skapa en klass Invoice med privata variabler för fakturanummer, kundnamn och totalbelopp.
+        // Implementera en parametriserad konstruktor för att initialisera dessa variabler.
+        // Lägg till metoder för att applicera en rabatt på totalbeloppet och för att visa fakturans detaljer.
+        // Skapa en Main-metod där du skapar flera fakturor, tillämpar rabatter och visar fakturans detaljer.
+        public static void PrintExercise9()
+        {
+            var invoice1 = new Invoice("123123", "Dennis", 100);
+            var invoice2 = new Invoice("456456", "Sofia", 200);
+
+            invoice1.DisplayDetails();
+
+            Console.WriteLine();
+
+            invoice2.DisplayDetails();
+
+            invoice1.ApplyDiscount(50);
+
+            Console.WriteLine("\n--- AFTER 50% DISCOUNT ---");
+            invoice1.DisplayDetails();
         }
     }
 }
