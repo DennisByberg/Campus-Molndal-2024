@@ -1,11 +1,8 @@
-﻿using campus_molndal_2024_oop._03_repetition_classes_objects;
-using System;
-using System.Reflection;
-using System.Xml.Linq;
+﻿using System;
 
 namespace campus_molndal_2024_oop._04_methods
 {
-    public static class Exercises4
+    public static class Exercises5
     {
         // Skriv en rekursiv metod SumArray som tar en array av heltal
         // som parameter och returnerar summan av alla tal i arrayen.

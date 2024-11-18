@@ -26,11 +26,14 @@
             //Exercises3.PrintExercise3();
             //Exercises3.PrintExercise4();
 
-            // 4.md
-            //Exercises4.PrintExercise1();
-            //Exercises4.PrintExercise2();
-            //Exercises4.PrintExercise3();
-            Exercises4.PrintExercise4();
+            // 5.md
+            //Exercises5.PrintExercise1();
+            //Exercises5.PrintExercise2();
+            //Exercises5.PrintExercise3();
+            //Exercises5.PrintExercise4();
+
+            // exercises.md
+            FinalExercises.PrintExercise1();
         }
     }
 }

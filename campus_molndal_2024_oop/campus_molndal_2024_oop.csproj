@@ -97,11 +97,13 @@
     <Compile Include="04_methods\Classes\Triangle.cs" />
     <Compile Include="04_methods\Exercises\Exercises2.cs" />
     <Compile Include="04_methods\Exercises\Exercises3.cs" />
-    <Compile Include="04_methods\Exercises\Exercises4.cs" />
+    <Compile Include="04_methods\Exercises\Exercises5.cs" />
+    <Compile Include="04_methods\Exercises\FinalExercises.cs" />
     <Compile Include="04_methods\Exercises\MethodsAndFunctionsRepetition.cs" />
     <Compile Include="04_methods\Helpers\Calculator.cs" />
     <Compile Include="04_methods\Helpers\MathHelper.cs" />
     <Compile Include="04_methods\Helpers\PrinterHelper.cs" />
+    <Compile Include="04_methods\Helpers\SimpleCalculator.cs" />
     <Compile Include="04_methods\Helpers\TemperatureConverter.cs" />
     <Compile Include="04_methods\Methods.cs" />
     <Compile Include="Program.cs" />
