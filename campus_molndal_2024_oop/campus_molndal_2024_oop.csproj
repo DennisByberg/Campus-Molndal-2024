@@ -88,6 +88,8 @@
     <Compile Include="03_repetition_classes_objects\RepetitionClassesObjects.cs" />
     <Compile Include="04_methods\Classes\Car.cs" />
     <Compile Include="04_methods\Classes\Circle.cs" />
+    <Compile Include="04_methods\Classes\Ebook.cs" />
+    <Compile Include="04_methods\Classes\LibraryBook.cs" />
     <Compile Include="04_methods\Classes\Person.cs" />
     <Compile Include="04_methods\Classes\Student.cs" />
     <Compile Include="04_methods\Exercises\Exercises2.cs" />

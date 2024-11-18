@@ -20,5 +20,11 @@ namespace campus_molndal_2024_oop._04_methods
 
             Console.WriteLine($"Name: {student.GetName()}, Age: {student.GetAge()}, Grade: {student.GetGrade()}");
         }
+
+        public static void PrintExercise3()
+        {
+            // LibraryBook.cs
+            // EBook.cs
+        }
     }
 }
