@@ -1,5 +1,4 @@
-﻿using campus_molndal_2024_oop._04_methods;
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 namespace campus_molndal_2024_oop._05_datatypes
@@ -37,6 +36,20 @@ namespace campus_molndal_2024_oop._05_datatypes
 
             int index = ListHelper.LinearSearch(numbers, 75);
             Console.WriteLine("Index of 75: " + index);
+        }
+
+        // 1. Skapa en lista med fem strängar.
+        // 2. Modifiera det tredje elementet i listan till en ny sträng.
+        // 3. Skriv ut listans innehåll före och efter modifieringen.
+        public static void PrintExercise3()
+        {
+            var names = new List<string> { "Dennis", "Sune", "Polka", "Sofia", "Matteo" };
+
+            Console.WriteLine("Before modification: " + string.Join(", ", names));
+
+            names[2] = "Polkissen";
+
+            Console.WriteLine("After modification: " + string.Join(", ", names));
         }
     }
 }
