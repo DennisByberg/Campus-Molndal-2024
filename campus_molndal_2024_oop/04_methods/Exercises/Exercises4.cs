@@ -40,7 +40,7 @@ namespace campus_molndal_2024_oop._04_methods
         // element i en sorterad array och returnerar dess index eller -1 om det inte finns.
         public static void PrintExercise3()
         {
-            int BinarySearch(int[] array, int left, int right, int target)
+            int BinarySearch(int[] arr, int left, int right, int targ)
             {
                 // Kontrollera om sökintervallet är giltigt
                 if (right >= left)
@@ -49,21 +49,45 @@ namespace campus_molndal_2024_oop._04_methods
                     int middle = left + (right - left) / 2;
 
                     // Om målet finns vid mittenindexet, returnera indexet
-                    if (array[middle] == target)
+                    if (arr[middle] == targ)
                         return middle;
 
                     // Om målet är mindre än mittenelementet,
                     // sök i den vänstra halvan av arrayen
-                    if (array[middle] > target)
-                        return BinarySearch(array, left, middle - 1, target);
+                    if (arr[middle] > targ)
+                        return BinarySearch(arr, left, middle - 1, targ);
 
                     // Om målet är större än mittenelementet,
                     // sök i den högra halvan av arrayen
-                    return BinarySearch(array, middle + 1, right, target);
+                    return BinarySearch(arr, middle + 1, right, targ);
                 }
 
                 // Om målet inte hittas, returnera -1
                 return -1;
+            }
+
+            int[] array = { 1, 3, 5, 7, 9, 11 };
+            int target = 7;
+            int result = BinarySearch(array, 0, array.Length - 1, target);
+
+            if (result != -1)
+                Console.WriteLine($"Elementet hittades vid index: {result}");
+            else
+                Console.WriteLine("Elementet hittades inte.");
+        }
+
+        public static void PrintExercise4()
+        {
+            void TowerOfHanoi(int n, char fromRod, char toRod, char auxRod)
+            {
+                if (n == 1)
+                {
+                    Console.WriteLine("Move disk 1 from rod " + fromRod + " to rod " + toRod);
+                    return;
+                }
+                TowerOfHanoi(n - 1, fromRod, auxRod, toRod);
+                Console.WriteLine("Move disk " + n + " from rod " + fromRod + " to rod " + toRod);
+                TowerOfHanoi(n - 1, auxRod, toRod, fromRod);
             }
         }
     }
