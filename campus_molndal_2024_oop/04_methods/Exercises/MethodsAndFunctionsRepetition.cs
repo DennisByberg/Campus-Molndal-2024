@@ -81,5 +81,11 @@ namespace campus_molndal_2024_oop._04_methods
             PrinterHelper.Print("Hello");
             PrinterHelper.Print("Hello", "World");
         }
+
+        public static void PrintExercise9()
+        {
+            Console.WriteLine(Calculator.Divide(10, 0));
+            Console.WriteLine(Calculator.Modulus(10, 3));
+        }
     }
 }

@@ -12,7 +12,8 @@
             //MethodsAndFunctionsRepetition.PrintExercise5();
             //MethodsAndFunctionsRepetition.PrintExercise6();
             //MethodsAndFunctionsRepetition.PrintExercise7();
-            MethodsAndFunctionsRepetition.PrintExercise8();
+            //MethodsAndFunctionsRepetition.PrintExercise8();
+            MethodsAndFunctionsRepetition.PrintExercise9();
         }
     }
 }
