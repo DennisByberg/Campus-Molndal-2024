@@ -30,5 +30,13 @@ namespace campus_molndal_2024_oop._05_datatypes
 
             return numbers.Min();
         }
+
+        public static int LinearSearch(List<int> list, int key)
+        {
+            for (int i = 0; i < list.Count; i++)
+                if (list[i] == key) return i;
+
+            return -1;
+        }
     }
 }

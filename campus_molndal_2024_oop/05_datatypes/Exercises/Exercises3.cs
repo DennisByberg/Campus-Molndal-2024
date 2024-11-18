@@ -1,4 +1,6 @@
-﻿using System;
+﻿using campus_molndal_2024_oop._04_methods;
+using System;
+using System.Collections.Generic;
 
 namespace campus_molndal_2024_oop._05_datatypes
 {
@@ -24,6 +26,17 @@ namespace campus_molndal_2024_oop._05_datatypes
             {
                 Console.Write(number + " ");
             }
+        }
+
+        // 1. Skapa en lista med minst fem heltal.
+        // 2. Skriv en metod som implementerar linjära sökning för att hitta ett specifikt tal i listan.
+        // 3. Testa metoden med några olika tal.
+        public static void PrintExercise2()
+        {
+            var numbers = new List<int> { 32, 64, 33, 75, 21 };
+
+            int index = ListHelper.LinearSearch(numbers, 75);
+            Console.WriteLine("Index of 75: " + index);
         }
     }
 }
