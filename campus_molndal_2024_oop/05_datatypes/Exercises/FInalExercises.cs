@@ -1,4 +1,8 @@
-﻿using System;
+﻿using campus_molndal_2024_oop._04_methods;
+using campus_molndal_2024_oop._05_datatypes.Classes;
+using System;
+using System.Security.Cryptography;
+using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._05_datatypes
 {
@@ -136,6 +140,59 @@ namespace campus_molndal_2024_oop._05_datatypes
             course.SortStudentsByGrade();
             Console.WriteLine("\nStudents sorted by grade (descending):");
             course.DisplayStudents();
+        }
+
+        // 1. Skapa en klass Playlist som innehåller en lista av Song-objekt.
+        // Varje Song-objekt har attributen title, artist, och duration(i sekunder).
+        // 2. Implementera en metod för att lägga till nya låtar till spellistan.
+        // 3. Skapa en metod som beräknar och returnerar den totala längden på spellistan.
+        // 4. Implementera en metod som sorterar låtarna i spellistan baserat på längd i stigande ordning.
+        // 5. Skriv en metod som söker efter alla låtar av en specifik artist och returnerar dem som en ny lista.
+        // 6. Implementera en metod som tar bort alla låtar av en viss artist från spellistan.
+        // 7. Gör en metod som hittar och returnerar den längsta låten i spellistan.
+        public static void PrintExercise5()
+        {
+            // Create a Playlist object
+            Playlist playlist = new Playlist();
+
+            // Add some songs to the playlist
+            playlist.AddSong(new Song("Song1", "Artist1", 180));  // 3 minutes
+            playlist.AddSong(new Song("Song2", "Artist2", 240));  // 4 minutes
+            playlist.AddSong(new Song("Song3", "Artist1", 210));  // 3.5 minutes
+            playlist.AddSong(new Song("Song4", "Artist3", 150));  // 2.5 minutes
+            playlist.AddSong(new Song("Song5", "Artist2", 300));  // 5 minutes
+
+            // Test 1: Get the total length of the playlist in seconds
+            int totalLength = playlist.GetTotalLengthInSeconds();
+            Console.WriteLine($"Total playlist length in seconds: {totalLength}");
+
+            // Test 2: Sort the playlist by song length (ascending)
+            playlist.SortByLength();
+            Console.WriteLine("\nSorted playlist by length:");
+            foreach (var song in playlist.playlist)
+            {
+                Console.WriteLine($"{song.Title} by {song.Artist} - {song.DurantionInSeconds} seconds");
+            }
+
+            // Test 3: Get all songs by a specific artist
+            var artist1Songs = playlist.GetAllSongsByArtist("Artist1");
+            Console.WriteLine("\nSongs by Artist1:");
+            foreach (var song in artist1Songs)
+            {
+                Console.WriteLine($"{song.Title} by {song.Artist} - {song.DurantionInSeconds} seconds");
+            }
+
+            // Test 4: Delete songs by a specific artist
+            playlist.DeleteSongsByArtist("Artist2");
+            Console.WriteLine("\nPlaylist after deleting songs by Artist2:");
+            foreach (var song in playlist.playlist)
+            {
+                Console.WriteLine($"{song.Title} by {song.Artist} - {song.DurantionInSeconds} seconds");
+            }
+
+            // Test 5: Get the longest song in the playlist
+            var longestSong = playlist.GetLongestSong();
+            Console.WriteLine($"\nThe longest song in the playlist is {longestSong.Title} by {longestSong.Artist} - {longestSong.DurantionInSeconds} seconds");
         }
     }
 }

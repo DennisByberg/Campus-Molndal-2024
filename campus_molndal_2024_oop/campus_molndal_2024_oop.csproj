@@ -115,6 +115,7 @@
     <Compile Include="05_datatypes\Classes\Course.cs" />
     <Compile Include="05_datatypes\Classes\Library.cs" />
     <Compile Include="05_datatypes\Classes\Player.cs" />
+    <Compile Include="05_datatypes\Classes\Playlist.cs" />
     <Compile Include="05_datatypes\Classes\School.cs" />
     <Compile Include="05_datatypes\Classes\Team.cs" />
     <Compile Include="05_datatypes\Classes\Zoo.cs" />
