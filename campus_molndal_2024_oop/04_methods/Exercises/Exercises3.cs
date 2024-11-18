@@ -35,5 +35,20 @@ namespace campus_molndal_2024_oop._04_methods
             var student = new Student("Dennis", 'A');
             student.PrintDetails();
         }
+
+        // Skapa en klass Employee med privata variabler name, position, och salary.
+        // Implementera flera konstruktorer: en standardkonstruktor,
+        // en konstruktor som accepterar namn och position, och en konstruktor som accepterar alla tre variabler.
+        // Skapa en metod DisplayEmployee som skriver ut information om anställden.
+        public static void PrintExercise4()
+        {
+            var employee1 = new Employee();
+            var employee2 = new Employee("Dennis", "Programmer");
+            var employee3 = new Employee("Sofia", "Dentist", 30_000);
+
+            employee1.DisplayEmployee();
+            employee2.DisplayEmployee();
+            employee3.DisplayEmployee();
+        }
     }
 }

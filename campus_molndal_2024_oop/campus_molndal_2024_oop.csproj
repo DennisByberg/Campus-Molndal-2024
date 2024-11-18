@@ -90,6 +90,7 @@
     <Compile Include="04_methods\Classes\Car.cs" />
     <Compile Include="04_methods\Classes\Circle.cs" />
     <Compile Include="04_methods\Classes\Ebook.cs" />
+    <Compile Include="04_methods\Classes\Employee.cs" />
     <Compile Include="04_methods\Classes\LibraryBook.cs" />
     <Compile Include="04_methods\Classes\Person.cs" />
     <Compile Include="04_methods\Classes\Student.cs" />
