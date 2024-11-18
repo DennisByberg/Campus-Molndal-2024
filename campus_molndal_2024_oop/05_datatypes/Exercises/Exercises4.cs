@@ -1,4 +1,6 @@
-﻿namespace campus_molndal_2024_oop._05_datatypes
+﻿using System.Security.Policy;
+
+namespace campus_molndal_2024_oop._05_datatypes
 {
     public static class Exercises4
     {
@@ -12,6 +14,18 @@
             team.AddPlayer(new Player("Niklas", 8));
 
             team.ListPlayers();
+        }
+
+        // 1. Skapa en klass Zoo som innehåller en lista av Animal-objekt.
+        // 2. Implementera metoder för att lägga till ett djur och lista alla djur i zooet.
+        public static void PrintExercise2()
+        {
+            Zoo zoo = new Zoo();
+            zoo.AddAnimal(new Animal("Lion"));
+            zoo.AddAnimal(new Animal("Tiger"));
+            zoo.AddAnimal(new Animal("Elephant"));
+
+            zoo.PrintAnimals();
         }
     }
 }
