@@ -39,5 +39,30 @@
 
             return newArr;
         }
+
+        public static int SumArray(int[] numbers)
+        {
+            int sum = 0;
+
+            foreach (var number in numbers)
+                sum += number;
+
+            return sum;
+        }
+
+        public static int EvenNumberCounter(int[] numbers)
+        {
+            var evenNumberCounter = 0;
+
+            foreach (var number in numbers)
+            {
+                if (number % 2 == 0)
+                {
+                    evenNumberCounter++;
+                }
+            }
+
+            return evenNumberCounter;
+        }
     }
 }

@@ -22,7 +22,12 @@
             // 4.md 
             //Exercises4.PrintExercise1();
             //Exercises4.PrintExercise2();
-            Exercises4.PrintExercise3();
+            //Exercises4.PrintExercise3();
+
+            // Hoppar över 5.md eftersom det är för inlämning.
+
+            // 6.md
+            FInalExercises.PrintExercise1();
         }
     }
 }
