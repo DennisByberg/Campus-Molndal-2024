@@ -1,5 +1,6 @@
 ﻿using campus_molndal_2024_oop._03_repetition_classes_objects;
 using System;
+using System.Security.Cryptography;
 using System.Text;
 using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
@@ -136,6 +137,15 @@ namespace campus_molndal_2024_oop._04_methods
 
             Console.WriteLine("\n--- AFTER REMOVE SUNE ---");
             studentRegister.DisplayAllStudents();
+        }
+
+        // Implementera en rekursiv metod som beräknar Fibonacci-tal.
+        // Metoden ska ta ett heltal n som parameter och returnera det n:te Fibonacci-talet.
+        // Använd metoden i Main-metoden för att generera de första 10 Fibonacci-talen och skriv ut dem.
+        public static void PrintExercise8()
+        {
+            for (int i = 0; i < 10; i++)
+                Console.WriteLine($"Fibonacci({i}) = {MathHelper.Fibonacci(i)}");
         }
     }
 }

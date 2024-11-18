@@ -39,7 +39,8 @@
             //FinalExercises.PrintExercise4();
             //FinalExercises.PrintExercise5();
             //FinalExercises.PrintExercise6();
-            FinalExercises.PrintExercise7();
+            //FinalExercises.PrintExercise7();
+            FinalExercises.PrintExercise8();
         }
     }
 }
