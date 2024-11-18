@@ -19,5 +19,12 @@ namespace campus_molndal_2024_oop._04_methods
         {
             Console.WriteLine($"Title: {_title}, Author: {_author}, Price: {_price}");
         }
+
+        public void ApplyDiscount(double discountPercentage)
+        {
+            double discountAmount = _price * (discountPercentage / 100);
+            _price -= discountAmount;
+            Console.WriteLine($"Discount of {discountPercentage}% applied. New price: {_price}");
+        }
     }
 }

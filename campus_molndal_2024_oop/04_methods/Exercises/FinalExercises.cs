@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Reflection;
-using System.Text;
 
 namespace campus_molndal_2024_oop._04_methods
 {
@@ -51,6 +49,61 @@ namespace campus_molndal_2024_oop._04_methods
         {
             Console.WriteLine(MathHelper.SumNumbers(3)); // 6
             Console.WriteLine(MathHelper.SumNumbers(5)); // 15
+        }
+
+        // Skapa en klass Book som innehåller privata variabler för titel, författare och pris.
+        // Implementera en parametriserad konstruktor för att sätta dessa värden.
+        // Implementera metoder för att visa information om boken samt för att applicera en rabatt på priset.
+        // Skapa instanser av Book i Main-metoden, tillämpa olika rabatter och visa bokinformationen efter varje rabatt.
+        public static void PrintExercise5()
+        {
+            var book1 = new Book("C# Programming", "John Doe", 299.99);
+            var book2 = new Book("Learning OOP", "Jane Smith", 149.50);
+
+            Console.WriteLine("--- Before Discount ---");
+            book1.DisplayInfo();
+            book2.DisplayInfo();
+
+            Console.WriteLine("\n--- Applying Discounts --");
+
+            // Applicera rabatt och visa information igen
+            book1.ApplyDiscount(20); // 20% rabatt
+            book1.DisplayInfo();
+
+            Console.WriteLine();
+
+            book2.ApplyDiscount(10); // 10% rabatt
+            book2.DisplayInfo();
+        }
+
+        // Implementera en metod för binärsökning som söker efter ett visst värde i en sorterad array av heltal.Om värdet hittas, returnera dess index, annars returnera -1.
+        // Använd rekursion i din implementation.
+        // Testa metoden i Main-metoden med olika sorterade arrayer och sökord.
+        public static void PrintExercise6()
+        {
+            // Recursive method for binary search
+            int BinarySearch(int[] arr, int left, int right, int target)
+            {
+                if (right >= left)
+                {
+                    int middle = left + (right - left) / 2;
+
+                    if (arr[middle] == target)
+                        return middle;
+
+                    if (arr[middle] > target)
+                        return BinarySearch(arr, left, middle - 1, target);
+
+                    return BinarySearch(arr, middle + 1, right, target);
+                }
+
+                return -1;
+            }
+
+            int[] arr1 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            int target1 = 5;
+            int result1 = BinarySearch(arr1, 0, arr1.Length - 1, target1);
+            Console.WriteLine(result1 != -1 ? $"Found at index {result1}" : "Not found");
         }
     }
 }
