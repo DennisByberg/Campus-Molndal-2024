@@ -33,7 +33,8 @@
             //Exercises5.PrintExercise4();
 
             // exercises.md
-            FinalExercises.PrintExercise1();
+            //FinalExercises.PrintExercise1();
+            FinalExercises.PrintExercise2();
         }
     }
 }
