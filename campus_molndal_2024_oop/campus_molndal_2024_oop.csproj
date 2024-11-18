@@ -97,6 +97,7 @@
     <Compile Include="04_methods\Classes\Triangle.cs" />
     <Compile Include="04_methods\Exercises\Exercises2.cs" />
     <Compile Include="04_methods\Exercises\Exercises3.cs" />
+    <Compile Include="04_methods\Exercises\Exercises4.cs" />
     <Compile Include="04_methods\Exercises\MethodsAndFunctionsRepetition.cs" />
     <Compile Include="04_methods\Helpers\Calculator.cs" />
     <Compile Include="04_methods\Helpers\MathHelper.cs" />
