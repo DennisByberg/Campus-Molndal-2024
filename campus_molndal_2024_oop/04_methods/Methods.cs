@@ -29,7 +29,8 @@
             // 4.md
             //Exercises4.PrintExercise1();
             //Exercises4.PrintExercise2();
-            Exercises4.PrintExercise3();
+            //Exercises4.PrintExercise3();
+            Exercises4.PrintExercise4();
         }
     }
 }
