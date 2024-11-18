@@ -1,4 +1,4 @@
-﻿using System.Security.Policy;
+﻿using System;
 
 namespace campus_molndal_2024_oop._05_datatypes
 {
@@ -26,6 +26,24 @@ namespace campus_molndal_2024_oop._05_datatypes
             zoo.AddAnimal(new Animal("Elephant"));
 
             zoo.PrintAnimals();
+        }
+
+        // 1. Skapa en klass School som innehåller både en array av Teacher-objekt och en lista av Student-objekt.
+        // 2. Implementera metoder för att lägga till lärare och studenter, och för att lista alla lärare och studenter.
+        public static void PrintExercise3()
+        {
+            School school = new School(2);
+            school.AddTeacher(new Teacher("Mr. Smith"));
+            school.AddTeacher(new Teacher("Mrs. Johnson"));
+
+            school.AddStudent(new Student("Dennis"));
+            school.AddStudent(new Student("Sune"));
+
+            Console.WriteLine("Teachers:");
+            school.ListTeachers();
+
+            Console.WriteLine("Students:");
+            school.ListStudents();
         }
     }
 }
