@@ -21,6 +21,11 @@ namespace campus_molndal_2024_oop._04_methods
         public Employee() : this("Unknown", "Unknown", 0)
         { }
 
+        public void SetSalary(double salary)
+        {
+            _salaly = salary;
+        }
+
         public void DisplayEmployee()
         {
             Console.WriteLine($"Name: {_name}, Position: {_position}, Salary: {_salaly}");

@@ -107,6 +107,7 @@
     <Compile Include="04_methods\Helpers\MathHelper.cs" />
     <Compile Include="04_methods\Helpers\PrinterHelper.cs" />
     <Compile Include="04_methods\Helpers\SimpleCalculator.cs" />
+    <Compile Include="04_methods\Helpers\StringHelper.cs" />
     <Compile Include="04_methods\Helpers\TemperatureConverter.cs" />
     <Compile Include="04_methods\Methods.cs" />
     <Compile Include="Program.cs" />

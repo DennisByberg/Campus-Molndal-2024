@@ -42,7 +42,9 @@
             //FinalExercises.PrintExercise7();
             //FinalExercises.PrintExercise8();
             //FinalExercises.PrintExercise9();
-            FinalExercises.PrintExercise10();
+            //FinalExercises.PrintExercise10();
+            //FinalExercises.PrintExercise11();
+            FinalExercises.PrintExercise12();
         }
     }
 }

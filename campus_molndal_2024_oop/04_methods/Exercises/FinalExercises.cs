@@ -1,4 +1,6 @@
-﻿using System;
+﻿using campus_molndal_2024_oop._04_methods.Helpers;
+using System;
+using System.Security.Cryptography;
 
 namespace campus_molndal_2024_oop._04_methods
 {
@@ -191,6 +193,35 @@ namespace campus_molndal_2024_oop._04_methods
             const int antalSkivor = 3;
             Console.WriteLine($"Löser Tornet i Hanoi för {antalSkivor} skivor:");
             SolveHanoi(antalSkivor, 'A', 'C', 'B');
+        }
+
+        // Implementera en rekursiv metod som tar en string som parameter och returnerar den omvända versionen av strängen.
+        // Testa metoden i Main-metoden med olika strängar.
+        public static void PrintExercise11()
+        {
+            string testString = "Hello";
+            Console.WriteLine($"Original: {testString}");
+            Console.WriteLine($"Omvänd: {StringHelper.ReverseString(testString)}");
+        }
+
+        // Skapa en klass Employee med privata variabler för namn, befattning och lön.Implementera konstruktorer för att initialisera dessa variabler.
+        // Implementera metoder för att visa anställdens detaljer och för att justera lönen.
+        // Skapa en Main-metod där du hanterar flera anställda, justerar löner och visar deras detaljer.
+        public static void PrintExercise12()
+        {
+            var employee1 = new Employee("Dennis", "Frontend Dev", 32_000);
+            var employee2 = new Employee("Sune", "Backend Dev", 42_000);
+
+            Console.WriteLine("--- BEFORE SALARY CHANGE ---");
+            employee1.DisplayEmployee();
+            employee2.DisplayEmployee();
+
+            employee1.SetSalary(50_000);
+            employee2.SetSalary(60_000);
+
+            Console.WriteLine("\n--- AFTER SALARY CHANGE ---");
+            employee1.DisplayEmployee();
+            employee2.DisplayEmployee();
         }
     }
 }
