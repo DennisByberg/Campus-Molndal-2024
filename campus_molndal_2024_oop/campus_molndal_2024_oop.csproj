@@ -112,6 +112,7 @@
     <Compile Include="04_methods\Methods.cs" />
     <Compile Include="05_datatypes\Classes\Animal.cs" />
     <Compile Include="05_datatypes\Classes\Book.cs" />
+    <Compile Include="05_datatypes\Classes\Course.cs" />
     <Compile Include="05_datatypes\Classes\Library.cs" />
     <Compile Include="05_datatypes\Classes\Player.cs" />
     <Compile Include="05_datatypes\Classes\School.cs" />

@@ -1,9 +1,4 @@
-﻿using campus_molndal_2024_oop._03_repetition_classes_objects;
-using campus_molndal_2024_oop._04_methods;
-using System;
-using System.Collections.Generic;
-using System.Xml.Linq;
-using static System.Net.Mime.MediaTypeNames;
+﻿using System;
 
 namespace campus_molndal_2024_oop._05_datatypes
 {
@@ -94,6 +89,53 @@ namespace campus_molndal_2024_oop._05_datatypes
 
             // Visa alla böcker i biblioteket
             library.DisplayAllBooks();
+        }
+
+
+        // 1. Skapa en klass Course med attributen courseName och en array av Student-objekt.
+        // 2. Implementera en metod i Course-klassen som tillåter att man lägger till en ny student till kursen.
+        // 3. Skapa en metod som returnerar en lista av alla studenter i kursen som har ett visst betyg(du kan lägga till ett attribut grade i Student-klassen).
+        // 4. Implementera en metod som hittar och returnerar den student som har högst betyg i kursen.
+        // 5. Lägg till hantering för situationen där kursen är full och inte kan ta emot fler studenter.
+        // 6. Implementera en metod som sorterar studenterna i kursen baserat på deras betyg i fallande ordning.
+        public static void PrintExercise4()
+        {
+            // Create a course with capacity for 3 students
+            Course course = new Course("Math", 3);
+
+            // Create some students
+            Student2 student1 = new Student2("Alice", 'A');
+            Student2 student2 = new Student2("Bob", 'B');
+            Student2 student3 = new Student2("Charlie", 'A');
+            Student2 student4 = new Student2("David", 'C');
+
+            // Add students to the course
+            course.AddStudent(student1);
+            course.AddStudent(student2);
+            course.AddStudent(student3);
+
+            // Try adding a student when the course is full
+            course.AddStudent(student4);  // This should display a message saying the course is full
+
+            // Display all students
+            course.DisplayStudents();
+
+            // Get students with grade 'A'
+            var studentsWithA = course.GetStudentByGrade('A');
+            Console.WriteLine("\nStudents with grade A:");
+            foreach (var student in studentsWithA)
+            {
+                Console.WriteLine(student.GetName());
+            }
+
+            // Get the student with the best grade
+            var bestStudent = course.GetStudentWithBestGrade();
+            Console.WriteLine($"\nStudent with the best grade: {bestStudent.GetName()}");
+
+            // Sort students by grade and display
+            course.SortStudentsByGrade();
+            Console.WriteLine("\nStudents sorted by grade (descending):");
+            course.DisplayStudents();
         }
     }
 }
