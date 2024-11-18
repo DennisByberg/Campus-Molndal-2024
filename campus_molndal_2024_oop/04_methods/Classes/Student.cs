@@ -1,33 +1,41 @@
 ﻿using System;
-using System.Diagnostics;
-using System.Text;
 
 namespace campus_molndal_2024_oop._04_methods
 {
     public class Student
     {
-        private string _name;
-        private int _age;
-        private char _grade;
+        private string name;
+        private int age;
+        private char grade;
+
+        public Student(string name, char grade)
+        {
+            this.name = name;
+            this.grade = grade;
+        }
+
+        public Student()
+        {
+        }
 
         public string GetName()
         {
-            return _name;
+            return name;
         }
 
         public int GetAge()
         {
-            return _age;
+            return age;
         }
 
         public char GetGrade()
         {
-            return _grade;
+            return grade;
         }
 
         public void SetName(string name)
         {
-            _name = name;
+            this.name = name;
         }
 
         public void SetAge(int age)
@@ -35,7 +43,7 @@ namespace campus_molndal_2024_oop._04_methods
             if (age < 0)
                 throw new ArgumentException("Age must be a positive number");
 
-            _age = age;
+            this.age = age;
         }
 
         public void SetGrade(char grade)
@@ -43,7 +51,12 @@ namespace campus_molndal_2024_oop._04_methods
             grade = char.ToUpper(grade);
 
             if (grade >= 'A' && grade <= 'F')
-                _grade = grade;
+                this.grade = grade;
+        }
+
+        public void PrintDetails()
+        {
+            Console.WriteLine($"Name: {name}, Grade: {grade}");
         }
     }
 }

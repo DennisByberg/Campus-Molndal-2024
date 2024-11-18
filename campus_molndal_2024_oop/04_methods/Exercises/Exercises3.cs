@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace campus_molndal_2024_oop._04_methods
 {
@@ -23,6 +24,16 @@ namespace campus_molndal_2024_oop._04_methods
 
             Console.WriteLine("Area of triangle 1: " + triangle1.CalculateArea());
             Console.WriteLine("Area of triangle 2: " + triangle2.CalculateArea());
+        }
+
+        // Skapa en klass Student med privata variabler name och grade.
+        // Implementera en parametriserad konstruktor som använder this-nyckelordet
+        // för att skilja mellan parametrar och klassens variabler.
+        // Skapa en metod PrintDetails som skriver ut studentens namn och betyg.
+        public static void PrintExercise3()
+        {
+            var student = new Student("Dennis", 'A');
+            student.PrintDetails();
         }
     }
 }
