@@ -169,12 +169,18 @@
     <Compile Include="07_inheritance\Interfaces\IPet.cs" />
     <Compile Include="07_inheritance\Interfaces\IPlayable.cs" />
     <Compile Include="07_inheritance\Interfaces\ITrainable.cs" />
+    <Compile Include="08_design_patterns\Classes\AppManager.cs" />
+    <Compile Include="08_design_patterns\DesignPatterns.cs" />
+    <Compile Include="08_design_patterns\Exercises\Exercises1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="08_design_patterns\Helpers\" />
+    <Folder Include="08_design_patterns\Interfaces\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
