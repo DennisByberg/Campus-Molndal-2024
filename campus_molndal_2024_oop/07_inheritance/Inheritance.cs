@@ -6,7 +6,10 @@
         {
             // 1.md
             //Exercises1.PrintExercise1();
-            Exercises1.PrintExercise2();
+            //Exercises1.PrintExercise2();
+
+            // 2.md 
+            Exercises2.PrintExercise1();
         }
     }
 }

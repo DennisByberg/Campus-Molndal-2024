@@ -134,6 +134,8 @@
     <Compile Include="07_inheritance\Classes\Truck.cs" />
     <Compile Include="07_inheritance\Classes\Vehicle.cs" />
     <Compile Include="07_inheritance\Exercises\Exercises1.cs" />
+    <Compile Include="07_inheritance\Exercises\Exercises2.cs" />
+    <Compile Include="07_inheritance\Helpers\Calculator.cs" />
     <Compile Include="07_inheritance\Inheritance.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -141,8 +143,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="07_inheritance\Helpers\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
