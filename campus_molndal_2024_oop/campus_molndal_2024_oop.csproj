@@ -142,6 +142,8 @@
     <Compile Include="07_inheritance\Classes\Piano.cs" />
     <Compile Include="07_inheritance\Classes\Rectangle.cs" />
     <Compile Include="07_inheritance\Classes\Shape.cs" />
+    <Compile Include="07_inheritance\Classes\Square.cs" />
+    <Compile Include="07_inheritance\Classes\Triangle.cs" />
     <Compile Include="07_inheritance\Classes\Truck.cs" />
     <Compile Include="07_inheritance\Classes\Vehicle.cs" />
     <Compile Include="07_inheritance\Exercises\Exercises1.cs" />
@@ -149,6 +151,7 @@
     <Compile Include="07_inheritance\Exercises\Exercises3.cs" />
     <Compile Include="07_inheritance\Exercises\Exercises4.cs" />
     <Compile Include="07_inheritance\Exercises\Exercises5.cs" />
+    <Compile Include="07_inheritance\Exercises\FinalExercises.cs" />
     <Compile Include="07_inheritance\Helpers\Calculator.cs" />
     <Compile Include="07_inheritance\Helpers\ColorPrinterHelper.cs" />
     <Compile Include="07_inheritance\Helpers\PrinterHelper.cs" />
