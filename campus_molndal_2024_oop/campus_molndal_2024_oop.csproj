@@ -132,6 +132,7 @@
     <Compile Include="07_inheritance\Classes\Animal.cs" />
     <Compile Include="07_inheritance\Classes\Car.cs" />
     <Compile Include="07_inheritance\Classes\Circle.cs" />
+    <Compile Include="07_inheritance\Classes\Database.cs" />
     <Compile Include="07_inheritance\Classes\Dog.cs" />
     <Compile Include="07_inheritance\Classes\Employee.cs" />
     <Compile Include="07_inheritance\Classes\FullTimeEmployee.cs" />
@@ -147,6 +148,7 @@
     <Compile Include="07_inheritance\Exercises\Exercises2.cs" />
     <Compile Include="07_inheritance\Exercises\Exercises3.cs" />
     <Compile Include="07_inheritance\Exercises\Exercises4.cs" />
+    <Compile Include="07_inheritance\Exercises\Exercises5.cs" />
     <Compile Include="07_inheritance\Helpers\Calculator.cs" />
     <Compile Include="07_inheritance\Helpers\ColorPrinterHelper.cs" />
     <Compile Include="07_inheritance\Helpers\PrinterHelper.cs" />
