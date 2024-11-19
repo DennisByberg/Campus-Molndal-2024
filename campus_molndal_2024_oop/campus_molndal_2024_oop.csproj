@@ -173,11 +173,13 @@
     <Compile Include="08_design_patterns\Classes\Bicycle.cs" />
     <Compile Include="08_design_patterns\Classes\Car.cs" />
     <Compile Include="08_design_patterns\Classes\Computer.cs" />
+    <Compile Include="08_design_patterns\Classes\Pizza.cs" />
     <Compile Include="08_design_patterns\Classes\VehicleFactory.cs" />
     <Compile Include="08_design_patterns\Classes\VehicleFactorySingleton.cs" />
     <Compile Include="08_design_patterns\DesignPatterns.cs" />
     <Compile Include="08_design_patterns\Exercises\Exercises1.cs" />
     <Compile Include="08_design_patterns\Exercises\Exercises2.cs" />
+    <Compile Include="08_design_patterns\Exercises\Exercises3.cs" />
     <Compile Include="08_design_patterns\Interfaces\IVehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
