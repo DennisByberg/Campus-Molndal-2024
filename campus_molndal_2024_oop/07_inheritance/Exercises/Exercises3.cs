@@ -24,9 +24,21 @@ namespace campus_molndal_2024_oop._07_inheritance
         {
             var piano = new Piano();
             var guitar = new Guitar();
-
             piano.Play();
             guitar.Play();
+        }
+
+        // 1. Skapa en abstrakt klass Animal med en abstrakt metod MakeSound() och en icke-abstrakt metod Sleep().
+        // 2. Skapa ett gränssnitt IPet med metoden Play().
+        // 3. Skapa en klass Dog som ärver från Animal och implementerar IPet.
+        // 4. Implementera alla metoder och demonstrera hur Dog-klassen fungerar.
+        public static void PrintChallenge()
+        {
+            var dog = new Dog();
+
+            dog.MakeSound();
+            dog.Sleep();
+            dog.Play();
         }
     }
 }
