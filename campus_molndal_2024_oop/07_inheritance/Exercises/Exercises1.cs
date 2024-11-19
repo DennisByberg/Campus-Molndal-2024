@@ -17,5 +17,19 @@
             car.PlayRadio();
             motorcycle.PopWheelie();
         }
+
+        // 1. Utvidga Vehicle-hierarkin genom att lägga till en underklass Truck.
+        // 2. Truck ska ha en specifik metod LoadCargo().
+        // 3. Lägg till en metod StopEngine() i basklassen Vehicle som skriver ut att motorn stannar.
+        // 4. Använd Truck-objektet för att demonstrera arv av metoder och egenskaper från Vehicle samt den specifika LoadCargo()-metoden.
+        // 5. Skapa ett objekt av typen Truck.
+        // 6. Använd både ärvda och nya metoder för att visa hur trucken fungerar.
+        public static void PrintExercise2()
+        {
+            var truck = new Truck("Ford", "F-Series", 2018);
+            truck.StartEngine();
+            truck.LoadCargo();
+            truck.StopEngine();
+        }
     }
 }

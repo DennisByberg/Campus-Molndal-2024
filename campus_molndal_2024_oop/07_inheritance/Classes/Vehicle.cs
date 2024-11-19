@@ -19,5 +19,10 @@ namespace campus_molndal_2024_oop._07_inheritance
         {
             Console.WriteLine("Starting enginge...");
         }
+
+        public void StopEngine()
+        {
+            Console.WriteLine("Stopping engine...");
+        }
     }
 }

@@ -5,7 +5,8 @@
         public static void RunExercises()
         {
             // 1.md
-            Exercises1.PrintExercise1();
+            //Exercises1.PrintExercise1();
+            Exercises1.PrintExercise2();
         }
     }
 }
