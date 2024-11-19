@@ -23,8 +23,6 @@ namespace campus_molndal_2024_oop._08_design_patterns.Exercises
         }
 
         public static void PrintExercise3()
-        {
-
-        }
+        { }
     }
 }
