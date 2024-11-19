@@ -129,12 +129,19 @@
     <Compile Include="05_datatypes\Helpers\ListHelper.cs" />
     <Compile Include="05_datatypes\Helpers\PrintHelper.cs" />
     <Compile Include="05_datatypes\Helpers\SortHelper.cs" />
+    <Compile Include="07_inheritance\Classes\Car.cs" />
+    <Compile Include="07_inheritance\Classes\Motorcycle.cs" />
+    <Compile Include="07_inheritance\Classes\Vehicle.cs" />
+    <Compile Include="07_inheritance\Exercises\Exercises1.cs" />
+    <Compile Include="07_inheritance\Inheritance.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="07_inheritance\Helpers\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

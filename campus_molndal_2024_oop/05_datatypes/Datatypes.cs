@@ -32,7 +32,7 @@
             //FinalExercises.PrintExercise3();
             //FinalExercises.PrintExercise4();
             //FinalExercises.PrintExercise5();
-            FinalExercises.PrintExercise6();
+            //FinalExercises.PrintExercise6();
         }
     }
 }
