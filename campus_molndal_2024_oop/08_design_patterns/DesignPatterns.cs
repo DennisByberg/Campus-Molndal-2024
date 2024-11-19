@@ -25,6 +25,12 @@ namespace campus_molndal_2024_oop._08_design_patterns
             //Exercises4.PrintExercise1();
             //Exercises4.PrintExercise2();
             //Exercises4.PrintExercise3();
+
+            // 5.md 
+            // --- REFLEKTION KLAR ---
+
+            // 6.md
+            // --- LIKT ÖVNINGARNA JAG GJORT ---
         }
     }
 }
