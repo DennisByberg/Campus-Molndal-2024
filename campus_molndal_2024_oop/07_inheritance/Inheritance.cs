@@ -29,7 +29,8 @@ namespace campus_molndal_2024_oop._07_inheritance
             //Exercises5.PrintExercise1();
 
             // exercises.md
-            FinalExercises.PrintExercise1();
+            //FinalExercises.PrintExercise1();
+            FinalExercises.PrintExercise2();
         }
     }
 }
