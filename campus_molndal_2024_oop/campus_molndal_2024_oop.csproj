@@ -139,6 +139,8 @@
     <Compile Include="07_inheritance\Exercises\Exercises1.cs" />
     <Compile Include="07_inheritance\Exercises\Exercises2.cs" />
     <Compile Include="07_inheritance\Helpers\Calculator.cs" />
+    <Compile Include="07_inheritance\Helpers\ColorPrinterHelper.cs" />
+    <Compile Include="07_inheritance\Helpers\PrinterHelper.cs" />
     <Compile Include="07_inheritance\Inheritance.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

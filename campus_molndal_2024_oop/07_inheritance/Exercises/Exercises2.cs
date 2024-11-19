@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace campus_molndal_2024_oop._07_inheritance
 {
@@ -23,6 +24,24 @@ namespace campus_molndal_2024_oop._07_inheritance
 
             circle.Draw();
             rectangle.Draw();
+        }
+
+        // 1. Skapa en klass Printer med överlagrade metoder Print() för att skriva ut olika typer av data(heltal, decimaltal, strängar).
+        // 2. Skapa en underklass ColorPrinter som överskuggar Print()-metoden för att lägga till färginformation till utskriften.
+        // 3. Implementera överlagringen och överskuggningen, och demonstrera användningen av både statisk och dynamisk polymorfism.
+        public static void Challenge()
+        {
+            var printer = new PrinterHelper();
+            printer.Print("hello world");
+            printer.Print(10);
+            printer.Print(13.37);
+
+            Console.WriteLine();
+
+            var colorPrinter = new ColorPrinterHelper();
+            colorPrinter.Print("hello world");
+            colorPrinter.Print(10);
+            colorPrinter.Print(13.37);
         }
     }
 }
