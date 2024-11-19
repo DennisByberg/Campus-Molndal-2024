@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Text;
 
 namespace campus_molndal_2024_oop._07_inheritance
 {
