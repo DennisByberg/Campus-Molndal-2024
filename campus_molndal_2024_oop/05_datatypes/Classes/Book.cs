@@ -7,6 +7,7 @@ namespace campus_molndal_2024_oop._05_datatypes
         public string Title { get; set; }
         public string Author { get; set; }
         public int Year { get; set; }
+        public bool IsLoaned { get; set; } = false;
 
         public Book(string title, string author, int year)
         {
@@ -17,7 +18,7 @@ namespace campus_molndal_2024_oop._05_datatypes
 
         public void DisplayInfo()
         {
-            Console.WriteLine($"Titel: {Title}, Författare: {Author}, År: {Year}");
+            Console.WriteLine($"Titel: {Title}, Författare: {Author}, År: {Year}, Utlånad: {(IsLoaned ? "Ja" : "Nej")}");
         }
     }
 }

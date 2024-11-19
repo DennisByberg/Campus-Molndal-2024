@@ -124,7 +124,7 @@
     <Compile Include="05_datatypes\Exercises\Exercises2.cs" />
     <Compile Include="05_datatypes\Exercises\Exercises3.cs" />
     <Compile Include="05_datatypes\Exercises\Exercises4.cs" />
-    <Compile Include="05_datatypes\Exercises\FInalExercises.cs" />
+    <Compile Include="05_datatypes\Exercises\FinalExercises.cs" />
     <Compile Include="05_datatypes\Helpers\ArrayHelper.cs" />
     <Compile Include="05_datatypes\Helpers\ListHelper.cs" />
     <Compile Include="05_datatypes\Helpers\PrintHelper.cs" />

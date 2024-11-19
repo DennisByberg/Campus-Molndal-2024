@@ -27,11 +27,12 @@
             // Hoppar över 5.md eftersom det är för inlämning.
 
             // exercises.md
-            //FInalExercises.PrintExercise1();
-            //FInalExercises.PrintExercise2();
-            //FInalExercises.PrintExercise3();
-            //FInalExercises.PrintExercise4();
-            FInalExercises.PrintExercise5();
+            //FinalExercises.PrintExercise1();
+            //FinalExercises.PrintExercise2();
+            //FinalExercises.PrintExercise3();
+            //FinalExercises.PrintExercise4();
+            //FinalExercises.PrintExercise5();
+            FinalExercises.PrintExercise6();
         }
     }
 }

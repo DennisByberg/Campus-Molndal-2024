@@ -1,12 +1,9 @@
-﻿using campus_molndal_2024_oop._04_methods;
-using campus_molndal_2024_oop._05_datatypes.Classes;
+﻿using campus_molndal_2024_oop._05_datatypes.Classes;
 using System;
-using System.Security.Cryptography;
-using System.Xml.Linq;
 
 namespace campus_molndal_2024_oop._05_datatypes
 {
-    public static class FInalExercises
+    public static class FinalExercises
     {
         // 1. Skapa en array med fem olika heltal.
         // 2. Skriv en metod som tar denna array som indata och returnerar summan av alla heltal i arrayen.
@@ -193,6 +190,41 @@ namespace campus_molndal_2024_oop._05_datatypes
             // Test 5: Get the longest song in the playlist
             var longestSong = playlist.GetLongestSong();
             Console.WriteLine($"\nThe longest song in the playlist is {longestSong.Title} by {longestSong.Artist} - {longestSong.DurantionInSeconds} seconds");
+        }
+
+        // 1. Skapa klasserna Library och Book där Library hanterar en lista av Book-objekt.
+        // 2. Implementera en metod i Library för att låna ut en bok(ta bort den från listan) och en annan metod för att returnera en bok(lägga till den tillbaka i listan).
+        // 3. Skapa en metod som returnerar alla böcker som är tillgängliga för utlåning.
+        // 4. Implementera en metod för att sortera böckerna i biblioteket baserat på författarens namn i alfabetisk ordning.
+        // 5. Skriv en metod som söker efter alla böcker av en viss författare och returnerar en lista över dem.
+        // 6. Lägg till hantering av situationen där en bok redan är utlånad eller inte finns i biblioteket.
+        // 7. Implementera en metod för att lista alla böcker som publicerades inom ett visst årtionde.
+        public static void PrintExercise6()
+        {
+            var library = new Library();
+
+            library.AddBook(new Book("Book A", "Author Z", 2000));
+            library.AddBook(new Book("Book B", "Author Y", 1995));
+            library.AddBook(new Book("Book C", "Author X", 2010));
+            library.AddBook(new Book("Book D", "Author Y", 1985));
+
+            Console.WriteLine("Alla böcker:");
+            library.DisplayAllBooks();
+
+            Console.WriteLine("\nUtlåning av 'Book A':");
+            library.LoanBook("Book A");
+            library.DisplayAllBooks();
+
+            Console.WriteLine("\nÅterlämning av 'Book A':");
+            library.ReturnBook("Book A");
+            library.DisplayAllBooks();
+
+            Console.WriteLine("\nBöcker från 1990-talet:");
+            var booksFrom90s = library.GetBooksByDecade(1990);
+            foreach (var book in booksFrom90s)
+            {
+                book.DisplayInfo();
+            }
         }
     }
 }
