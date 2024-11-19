@@ -1,6 +1,9 @@
-﻿namespace campus_molndal_2024_oop._07_inheritance.Classes
+﻿using campus_molndal_2024_oop._07_inheritance.Interfaces;
+using System;
+
+namespace campus_molndal_2024_oop._07_inheritance.Classes
 {
-    public class PartTimeEmployee : Employee
+    public class PartTimeEmployee : Employee, IPayable
     {
         public double HourlyRate { get; set; }
         public int HoursWorked { get; set; }
@@ -14,6 +17,11 @@
         public override double CalculateSalary()
         {
             return HourlyRate * HoursWorked;
+        }
+
+        public void Pay()
+        {
+            Console.WriteLine("Paying " + Name + " a salary of " + CalculateSalary());
         }
     }
 }
