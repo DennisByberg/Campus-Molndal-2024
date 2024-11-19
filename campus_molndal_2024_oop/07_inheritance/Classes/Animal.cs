@@ -1,4 +1,5 @@
-﻿using System;
+﻿using campus_molndal_2024_oop._07_inheritance.Interfaces;
+using System;
 
 namespace campus_molndal_2024_oop._07_inheritance.Classes
 {
@@ -9,6 +10,45 @@ namespace campus_molndal_2024_oop._07_inheritance.Classes
         public void Sleep()
         {
             Console.WriteLine("Zzzzz");
+        }
+    }
+
+    public class Lion : Animal, IFeedable
+    {
+        public void Feed()
+        {
+            Console.WriteLine("Feeding the lion with zebra meat");
+        }
+
+        public override void MakeSound()
+        {
+            Console.WriteLine("Lion makes a sound");
+        }
+    }
+
+    public class Elehant : Animal, IFeedable
+    {
+        public void Feed()
+        {
+            Console.WriteLine("Feeding the elephant with leaves");
+        }
+
+        public override void MakeSound()
+        {
+            Console.WriteLine("Elephant makes a sound");
+        }
+    }
+
+    public class Giraffe : Animal, IFeedable
+    {
+        public void Feed()
+        {
+            Console.WriteLine("Feeding the giraffe with acacia leaves");
+        }
+
+        public override void MakeSound()
+        {
+            Console.WriteLine("Giraffe makes a sound");
         }
     }
 }
