@@ -133,8 +133,11 @@
     <Compile Include="07_inheritance\Classes\Car.cs" />
     <Compile Include="07_inheritance\Classes\Circle.cs" />
     <Compile Include="07_inheritance\Classes\Dog.cs" />
+    <Compile Include="07_inheritance\Classes\Employee.cs" />
+    <Compile Include="07_inheritance\Classes\FullTimeEmployee.cs" />
     <Compile Include="07_inheritance\Classes\Guitar.cs" />
     <Compile Include="07_inheritance\Classes\Motorcycle.cs" />
+    <Compile Include="07_inheritance\Classes\PartTimeEmployee.cs" />
     <Compile Include="07_inheritance\Classes\Piano.cs" />
     <Compile Include="07_inheritance\Classes\Rectangle.cs" />
     <Compile Include="07_inheritance\Classes\Shape.cs" />
@@ -143,6 +146,7 @@
     <Compile Include="07_inheritance\Exercises\Exercises1.cs" />
     <Compile Include="07_inheritance\Exercises\Exercises2.cs" />
     <Compile Include="07_inheritance\Exercises\Exercises3.cs" />
+    <Compile Include="07_inheritance\Exercises\Exercises4.cs" />
     <Compile Include="07_inheritance\Helpers\Calculator.cs" />
     <Compile Include="07_inheritance\Helpers\ColorPrinterHelper.cs" />
     <Compile Include="07_inheritance\Helpers\PrinterHelper.cs" />

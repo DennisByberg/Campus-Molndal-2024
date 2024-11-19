@@ -1,4 +1,6 @@
-﻿namespace campus_molndal_2024_oop._07_inheritance
+﻿using campus_molndal_2024_oop._07_inheritance.Exercises;
+
+namespace campus_molndal_2024_oop._07_inheritance
 {
     public static class Inheritance
     {
@@ -16,7 +18,10 @@
             // 3.md
             //Exercises3.PrintExercise1();
             //Exercises3.PrintExercise2();
-            Exercises3.PrintChallenge();
+            //Exercises3.PrintChallenge();
+
+            // 4.md 
+            Exercises4.PrintExercise1();
         }
     }
 }
