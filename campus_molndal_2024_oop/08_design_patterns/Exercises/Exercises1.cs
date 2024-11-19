@@ -21,5 +21,10 @@ namespace campus_molndal_2024_oop._08_design_patterns.Exercises
             car.Drive(); // Output: Driving the car...
             bicycle.Drive(); // Output: Driving the bicycle...
         }
+
+        public static void PrintExercise3()
+        {
+
+        }
     }
 }
