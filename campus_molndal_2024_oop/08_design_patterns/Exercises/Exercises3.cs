@@ -19,5 +19,16 @@ namespace campus_molndal_2024_oop._08_design_patterns.Exercises
 
             Console.WriteLine(pizza);
         }
+
+        public static void PrintExercise3()
+        {
+            var pizza = new Pizza()
+                .SetCrust("Thin Crust")
+                .SetSize("Medium")
+                .SetToppings("Fresh mozzarella")
+                .SetCheeseType("Strong");
+
+            Console.WriteLine(pizza);
+        }
     }
 }

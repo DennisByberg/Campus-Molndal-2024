@@ -5,6 +5,7 @@
         private string _size;
         private string _crust;
         private string _toppings;
+        private string _cheeseType;
 
         public Pizza SetSize(string size)
         {
@@ -24,9 +25,15 @@
             return this;
         }
 
+        public Pizza SetCheeseType(string cheeseType)
+        {
+            _cheeseType = cheeseType;
+            return this;
+        }
+
         public override string ToString()
         {
-            return $"Pizza - Size: {_size}, Crust: {_crust}, Toppings: {_toppings}";
+            return $"Pizza - Size: {_size}, Crust: {_crust}, Toppings: {_toppings}, Cheese Type: {_cheeseType}";
         }
     }
 }
