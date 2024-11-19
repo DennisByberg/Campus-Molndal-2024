@@ -8,6 +8,7 @@ namespace campus_molndal_2024_oop._08_design_patterns.Classes
         private readonly string RAM;
         private readonly string Storage;
         private readonly string GraphicsCard;
+        private readonly string OperatingSystem;
 
         private Computer(ComputerBuilder builder)
         {
@@ -15,6 +16,7 @@ namespace campus_molndal_2024_oop._08_design_patterns.Classes
             RAM = builder.GetRAM();
             Storage = builder.GetStorage();
             GraphicsCard = builder.GetGraphicsCard();
+            OperatingSystem = builder.GetOperatingSystem();
         }
 
         public static ComputerBuilder Builder(string cpu, string ram)
@@ -37,6 +39,7 @@ namespace campus_molndal_2024_oop._08_design_patterns.Classes
             private string RAM { get; }
             private string Storage { get; set; }
             private string GraphicsCard { get; set; }
+            private string OperatingSystem { get; set; }
 
             public ComputerBuilder(string cpu, string ram)
             {
@@ -56,12 +59,19 @@ namespace campus_molndal_2024_oop._08_design_patterns.Classes
                 return this;
             }
 
+            public ComputerBuilder SetOperatingSystem(string operatingSystem)
+            {
+                OperatingSystem = operatingSystem;
+                return this;
+            }
+
             public Computer Build() => new Computer(this);
 
             internal string GetCPU() => CPU;
             internal string GetRAM() => RAM;
             internal string GetStorage() => Storage;
             internal string GetGraphicsCard() => GraphicsCard;
+            internal string GetOperatingSystem() => OperatingSystem;
         }
     }
 }

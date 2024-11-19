@@ -24,5 +24,16 @@ namespace campus_molndal_2024_oop._08_design_patterns.Exercises
             Console.WriteLine(gamingPC);
             Console.WriteLine(officePC);
         }
+
+        public static void PrintExercise3()
+        {
+            Computer gamingPC = new Computer.ComputerBuilder("Intel i9", "32GB")
+                .SetStorage("1TB SSD")
+                .SetGraphicsCard("NVIDIA RTX 3080")
+                .SetOperatingSystem("Windows")
+                .Build();
+
+            Console.WriteLine(gamingPC);
+        }
     }
 }
