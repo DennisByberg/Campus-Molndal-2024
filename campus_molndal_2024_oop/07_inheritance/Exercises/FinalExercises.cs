@@ -44,8 +44,36 @@ namespace campus_molndal_2024_oop._07_inheritance.Exercises
             PaymentProcessor processor = new PaymentProcessor();
             processor.AddPayment(new CreditCardPayment());
             processor.AddPayment(new PayPalPayment());
-
             processor.ProcessAllPayments();
+        }
+
+        // 1. Skapa ett gränssnitt Drawable med metoden draw().
+        // 2. Implementera gränssnittet i tre olika klasser: Circle, Rectangle och Triangle, där varje klass har specifika egenskaper för formen.
+        // 3. Implementera metoden draw() så att den ritar ut formen med hjälp av text (t.ex.ritar en enkel representation av cirkeln, rektangeln eller triangeln).
+        // 4. Skapa en klass DrawingBoard som tar emot en lista av Drawable-objekt och har en metod displayAll() som anropar draw() på varje objekt för att visa alla former på skärmen.
+        public static void PrintExercise4()
+        {
+            DrawingBoard board = new DrawingBoard();
+            board.AddDrawing(new Circle());
+            board.AddDrawing(new Rectangle());
+            board.AddDrawing(new Triangle());
+
+            board.DisplayAll();
+        }
+
+        // 1. Skapa en abstrakt klass `Animal med en abstrakt metod makeSound() och en icke-abstrakt metodsleep().
+        // 2. Skapa ett gränssnitt Pet med metoden play() och ett annat gränssnitt Trainable med metoden performTrick().
+        // 3. Implementera tre klasser: Dog, Cat och Parrot, där varje klass ärver från Animal och implementerar antingen Pet eller Trainable eller båda.
+        // 4. Skapa en klass PetShop som hanterar en lista av Animal-objekt och har metoder för att låta alla djur göra ljud, sova och, om möjligt, leka eller utföra trick beroende på deras gränssnitt.
+        public static void PrintExercise5()
+        {
+            PetShop shop = new PetShop();
+
+            shop.AddAnimal(new Dog());
+            shop.AddAnimal(new Cat());
+            shop.AddAnimal(new Parrot());
+
+            shop.ManageAnimals();
         }
     }
 }

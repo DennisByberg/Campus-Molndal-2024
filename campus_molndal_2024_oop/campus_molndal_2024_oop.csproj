@@ -135,6 +135,7 @@
     <Compile Include="07_inheritance\Classes\Circle.cs" />
     <Compile Include="07_inheritance\Classes\Database.cs" />
     <Compile Include="07_inheritance\Classes\Dog.cs" />
+    <Compile Include="07_inheritance\Classes\DrawingBoard.cs" />
     <Compile Include="07_inheritance\Classes\Employee.cs" />
     <Compile Include="07_inheritance\Classes\FullTimeEmployee.cs" />
     <Compile Include="07_inheritance\Classes\Guitar.cs" />
@@ -144,6 +145,7 @@
     <Compile Include="07_inheritance\Classes\Motorcycle.cs" />
     <Compile Include="07_inheritance\Classes\PartTimeEmployee.cs" />
     <Compile Include="07_inheritance\Classes\Payment.cs" />
+    <Compile Include="07_inheritance\Classes\PetShop.cs" />
     <Compile Include="07_inheritance\Classes\Piano.cs" />
     <Compile Include="07_inheritance\Classes\Rectangle.cs" />
     <Compile Include="07_inheritance\Classes\Shape.cs" />
@@ -162,9 +164,11 @@
     <Compile Include="07_inheritance\Helpers\PrinterHelper.cs" />
     <Compile Include="07_inheritance\Inheritance.cs" />
     <Compile Include="07_inheritance\Interfaces\IFeedable.cs" />
+    <Compile Include="07_inheritance\Interfaces\IDrawable.cs" />
     <Compile Include="07_inheritance\Interfaces\IPayable.cs" />
     <Compile Include="07_inheritance\Interfaces\IPet.cs" />
     <Compile Include="07_inheritance\Interfaces\IPlayable.cs" />
+    <Compile Include="07_inheritance\Interfaces\ITrainable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

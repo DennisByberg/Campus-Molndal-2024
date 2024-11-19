@@ -1,8 +1,9 @@
-﻿using System;
+﻿using campus_molndal_2024_oop._07_inheritance.Interfaces;
+using System;
 
 namespace campus_molndal_2024_oop._07_inheritance
 {
-    public class Rectangle : Shape
+    public class Rectangle : Shape, IDrawable
     {
         public int Length { get; set; }
         public int Width { get; set; }

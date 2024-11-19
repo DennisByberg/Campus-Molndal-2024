@@ -51,4 +51,43 @@ namespace campus_molndal_2024_oop._07_inheritance.Classes
             Console.WriteLine("Giraffe makes a sound");
         }
     }
+
+    public class Cat : Animal, IPet
+    {
+        public override void MakeSound()
+        {
+            Console.WriteLine("Mjao");
+        }
+
+        public void Play()
+        {
+            Console.WriteLine("Playing with cat");
+        }
+    }
+
+    public partial class Dog : Animal, ITrainable
+    {
+        public override void MakeSound()
+        {
+            Console.WriteLine("WOFF!");
+        }
+
+        public void PerformTrick()
+        {
+            Console.WriteLine("Dog performs trick");
+        }
+    }
+
+    public class Parrot : Animal, IPet
+    {
+        public override void MakeSound()
+        {
+            Console.WriteLine("KAWKAW!");
+        }
+
+        public void Play()
+        {
+            Console.WriteLine("Playing with parrot");
+        }
+    }
 }
