@@ -131,7 +131,9 @@
     <Compile Include="05_datatypes\Helpers\SortHelper.cs" />
     <Compile Include="07_inheritance\Classes\Car.cs" />
     <Compile Include="07_inheritance\Classes\Circle.cs" />
+    <Compile Include="07_inheritance\Classes\Guitar.cs" />
     <Compile Include="07_inheritance\Classes\Motorcycle.cs" />
+    <Compile Include="07_inheritance\Classes\Piano.cs" />
     <Compile Include="07_inheritance\Classes\Rectangle.cs" />
     <Compile Include="07_inheritance\Classes\Shape.cs" />
     <Compile Include="07_inheritance\Classes\Truck.cs" />
@@ -143,6 +145,7 @@
     <Compile Include="07_inheritance\Helpers\ColorPrinterHelper.cs" />
     <Compile Include="07_inheritance\Helpers\PrinterHelper.cs" />
     <Compile Include="07_inheritance\Inheritance.cs" />
+    <Compile Include="07_inheritance\Interfaces\IPlayable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
