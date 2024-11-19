@@ -17,6 +17,8 @@ namespace campus_molndal_2024_oop._08_design_patterns
             //Exercises2.PrintExercise3();
 
             // 3.md
+            //Exercises3.PrintExercise1();
+            Exercises3.PrintExercise2();
         }
     }
 }
