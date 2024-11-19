@@ -172,6 +172,7 @@
     <Compile Include="08_design_patterns\Classes\AppManager.cs" />
     <Compile Include="08_design_patterns\Classes\Bicycle.cs" />
     <Compile Include="08_design_patterns\Classes\Car.cs" />
+    <Compile Include="08_design_patterns\Classes\Computer.cs" />
     <Compile Include="08_design_patterns\Classes\VehicleFactory.cs" />
     <Compile Include="08_design_patterns\Classes\VehicleFactorySingleton.cs" />
     <Compile Include="08_design_patterns\DesignPatterns.cs" />
