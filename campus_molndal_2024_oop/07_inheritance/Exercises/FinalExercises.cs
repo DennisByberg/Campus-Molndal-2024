@@ -35,5 +35,17 @@ namespace campus_molndal_2024_oop._07_inheritance.Exercises
 
             library.ListItems();
         }
+
+        // 1. Skapa en abstrakt klass Payment med en abstrakt metod processPayment().
+        // 2. Implementera två underklasser CreditCardPayment och PayPalPayment som överskrider processPayment() för att simulera betalning med kreditkort respektive PayPal.
+        // 3. Skapa en klass PaymentProcessor som tar emot en lista av Payment-objekt och har en metod processAllPayments() som itererar genom listan och anropar processPayment() för varje betalning.
+        public static void PrintExercise3()
+        {
+            PaymentProcessor processor = new PaymentProcessor();
+            processor.AddPayment(new CreditCardPayment());
+            processor.AddPayment(new PayPalPayment());
+
+            processor.ProcessAllPayments();
+        }
     }
 }

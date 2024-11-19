@@ -143,6 +143,7 @@
     <Compile Include="07_inheritance\Classes\Magazine.cs" />
     <Compile Include="07_inheritance\Classes\Motorcycle.cs" />
     <Compile Include="07_inheritance\Classes\PartTimeEmployee.cs" />
+    <Compile Include="07_inheritance\Classes\Payment.cs" />
     <Compile Include="07_inheritance\Classes\Piano.cs" />
     <Compile Include="07_inheritance\Classes\Rectangle.cs" />
     <Compile Include="07_inheritance\Classes\Shape.cs" />
