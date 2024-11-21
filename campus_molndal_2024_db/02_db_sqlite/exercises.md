@@ -144,36 +144,85 @@ WHERE
 
 <i>Skapa en prepared statement för att lägga till nya filmer i databasen. Använd den sedan för att lägga till två nya filmer.</i>
 ```sqlite
+PREPARE stmt_insert_movie AS
+INSERT INTO Movies (Title, Director, PublicationYear, Genre)
+VALUES (?, ?, ?, ?);
 
+EXECUTE stmt_insert_movie('Inception', 'Christopher Nolan', 2010, 'Science Fiction');
+EXECUTE stmt_insert_movie('The Social Network', 'David Fincher', 2010, 'Biography Drama');
+
+DEALLOCATE stmt_insert_movie;
 ```
 <br>
 
 <i>Skriv en SQL-fråga som använder UNION för att kombinera en lista av alla regissörer och alla skådespelare i en enda resultatlista utan dubbletter.</i>
 ```sqlite
-
+SELECT Director AS Name
+FROM Movies
+UNION
+SELECT ActorName AS Name
+FROM Actors;
 ```
 <br>
 
 <i>Skapa en trigger som automatiskt uppdaterar ett "last_updated" fält i Movies-tabellen varje gång en film ändras.</i>
 ```sqlite
+ALTER TABLE Movies
+ADD COLUMN last_updated TEXT;
 
+-- Skapa en trigger för att uppdatera "last_updated" vid förändringar
+CREATE TRIGGER update_last_updated
+AFTER UPDATE ON Movies
+FOR EACH ROW
+BEGIN
+    UPDATE Movies
+    SET last_updated = DATETIME('now')
+    WHERE ID = OLD.ID;
+END;
+
+UPDATE Movies
+SET Title = 'Inception (Updated)'
+WHERE ID = 1;
+
+-- Kontrollera resultatet
+SELECT * FROM Movies WHERE ID = 1;
 ```
 <br>
 
 <i>Implementera en stored procedure som tar ett årtal som input och returnerar alla filmer från det året tillsammans med deras skådespelare.</i>
 ```sqlite
-
+TODO
 ```
 <br>
 
 <i>Skriv en komplex SQL-fråga som använder JOIN, GROUP BY, HAVING, och en subquery för att hitta alla skådespelare som har medverkat i mer än två filmer av samma regissör.</i>
 ```sqlite
-
+SELECT 
+    Actors.ActorName,
+    Directors.DirectorName,
+    COUNT(*) AS MovieCount
+FROM 
+    MovieActors
+INNER JOIN 
+    Movies ON MovieActors.MovieID = Movies.ID
+INNER JOIN 
+    Actors ON MovieActors.ActorID = Actors.ID
+INNER JOIN 
+    (SELECT 
+         DISTINCT Movies.Director AS DirectorName,
+         Movies.ID AS MovieID
+     FROM 
+         Movies
+    ) AS Directors ON Movies.ID = Directors.MovieID
+GROUP BY 
+    Actors.ActorName, Directors.DirectorName
+HAVING 
+    COUNT(*) > 2;
 ```
 <br>
 
 <i>Skapa ett UML-diagram som visar relationerna mellan Movies, Actors, och MovieActors tabellerna. Inkludera primärnycklar och främmande nycklar.</i>
 ```sqlite
-
+TODO
 ```
 <br>
