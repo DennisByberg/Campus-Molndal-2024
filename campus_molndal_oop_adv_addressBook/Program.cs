@@ -31,6 +31,18 @@ namespace campus_molndal_oop_adv_addressBook
                         addressBook.DisplayContacts();
                         break;
 
+                    case 3:
+                        Console.Write("Ange kontakt-ID: ");
+                        int updateId = int.Parse(Console.ReadLine());
+                        Console.Write("Ange nytt namn: ");
+                        string newName = Console.ReadLine();
+                        Console.Write("Ange ny telefon: ");
+                        string newPhone = Console.ReadLine();
+                        Console.Write("Ange ny e-post: ");
+                        string newEmail = Console.ReadLine();
+                        addressBook.UpdateContact(updateId, newName, newPhone, newEmail);
+                        break;
+
                     case 5:
                         return;
 

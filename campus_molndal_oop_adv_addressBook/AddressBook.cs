@@ -99,5 +99,39 @@ namespace campus_molndal_oop_adv_addressBook
             }
         }
 
+        // ----- UPDATE A CONTACT -----
+        public void UpdateContact(int id, string name, string phone, string email)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(CONNECTION_STRING))
+                {
+                    connection.Open();
+                    string QUERY = "UPDATE Contacts SET Name = @Name, Phone = @Phone, Email = @Email WHERE Id = @Id";
+
+                    using (var command = new SQLiteCommand(QUERY, connection))
+                    {
+                        command.Parameters.AddWithValue("@Id", id);
+                        command.Parameters.AddWithValue("@Name", name);
+                        command.Parameters.AddWithValue("@Phone", phone);
+                        command.Parameters.AddWithValue("@Email", email);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            Console.WriteLine("Kontakt uppdaterad.");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Ingen kontakt hittades med det ID:t.");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Fel vid uppdatering av kontakt: {ex.Message}");
+            }
+        }
     }
 }
