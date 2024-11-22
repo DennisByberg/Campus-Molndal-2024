@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "campus_molndal_2024_db", "c
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "campus_molndal_oop_adv_addressBook", "campus_molndal_oop_adv_addressBook\campus_molndal_oop_adv_addressBook.csproj", "{062FFF6A-FD9D-46A9-B27E-591FBABEB704}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "campus_molndal_oop_adv_todo", "campus_molndal_oop_adv_todo\campus_molndal_oop_adv_todo.csproj", "{36FB3B28-63F1-434F-BC5C-F0D18CAAA234}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{062FFF6A-FD9D-46A9-B27E-591FBABEB704}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{062FFF6A-FD9D-46A9-B27E-591FBABEB704}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{062FFF6A-FD9D-46A9-B27E-591FBABEB704}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36FB3B28-63F1-434F-BC5C-F0D18CAAA234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36FB3B28-63F1-434F-BC5C-F0D18CAAA234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36FB3B28-63F1-434F-BC5C-F0D18CAAA234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36FB3B28-63F1-434F-BC5C-F0D18CAAA234}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
