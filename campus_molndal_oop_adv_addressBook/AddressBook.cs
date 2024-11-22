@@ -86,7 +86,7 @@ namespace campus_molndal_oop_adv_addressBook
                             while (reader.Read())
                             {
                                 // Read and print the values of the Name, Phone, and Email columns
-                                Console.WriteLine($"{reader["Name"]} - {reader["Phone"]} - {reader["Email"]}");
+                                Console.WriteLine($"{reader["Id"]} | {reader["Name"]}, {reader["Phone"]}, {reader["Email"]}");
                             }
                         }
                     }
@@ -131,6 +131,35 @@ namespace campus_molndal_oop_adv_addressBook
             catch (Exception ex)
             {
                 Console.WriteLine($"Fel vid uppdatering av kontakt: {ex.Message}");
+            }
+        }
+
+        // ----- DELETE A CONTACT -----
+        public void DeleteContact(int id)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(CONNECTION_STRING))
+                {
+                    connection.Open();
+                    string QUERY = "DELETE FROM Contacts WHERE Id = @Id";
+
+                    using (var command = new SQLiteCommand(QUERY, connection))
+                    {
+                        command.Parameters.AddWithValue("@Id", id);
+                        int rowsAffected = command.ExecuteNonQuery();
+                        bool successDelete = rowsAffected > 0;
+
+                        if (successDelete)
+                            Console.WriteLine("Kontakt borttagen");
+                        else
+                            Console.WriteLine("Ingen kontakt hittades med det id");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Fel vid borttagning av kontakt: {ex.Message}");
             }
         }
     }

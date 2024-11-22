@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="AddressBook.cs" />
     <Compile Include="Helpers\PrintHelper.cs" />
+    <Compile Include="Helpers\ReadHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
