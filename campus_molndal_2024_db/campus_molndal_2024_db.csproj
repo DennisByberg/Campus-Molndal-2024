@@ -49,6 +49,7 @@
   <ItemGroup>
     <None Include="01_introduction\exercises.md" />
     <None Include="02_db_sqlite\exercises.md" />
+    <None Include="04_db_mysql\Exercises1.md" />
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup />
