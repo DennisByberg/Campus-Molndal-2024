@@ -1,5 +1,6 @@
 ﻿using campus_molndal_oop_adv_todo.Interfaces;
 using System;
+using System.Collections.Generic;
 using System.Data.SQLite;
 
 namespace campus_molndal_oop_adv_todo
@@ -95,6 +96,57 @@ namespace campus_molndal_oop_adv_todo
             catch (Exception ex)
             {
                 Console.WriteLine("Something went wrong viewing the todos: " + ex);
+            }
+        }
+
+        public void UpdateMultipleTodos(List<(int Id, string Description, int IsCompleted, string CreatedOn)> todosToUpdate)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(CONNECTION_STRING))
+                {
+                    connection.Open();
+
+                    using (var transaction = connection.BeginTransaction())
+                    {
+                        try
+                        {
+                            const string SQLITE_UPDATE_QUERY = @"
+                        UPDATE Todos SET
+                        Description = @Description,
+                        IsCompleted = @IsCompleted,
+                        CreatedOn = @CreatedOn
+                        WHERE Id = @Id";
+
+                            foreach (var todo in todosToUpdate)
+                            {
+                                using (var cmd = new SQLiteCommand(SQLITE_UPDATE_QUERY, connection, transaction))
+                                {
+                                    cmd.Parameters.AddWithValue("@Id", todo.Id);
+                                    cmd.Parameters.AddWithValue("@Description", todo.Description);
+                                    cmd.Parameters.AddWithValue("@IsCompleted", todo.IsCompleted);
+                                    cmd.Parameters.AddWithValue("@CreatedOn", todo.CreatedOn);
+
+                                    cmd.ExecuteNonQuery();
+                                }
+                            }
+
+                            // Bekräfta transaktionen
+                            transaction.Commit();
+                            Console.WriteLine("All todos updated successfully.");
+                        }
+                        catch (Exception innerEx)
+                        {
+                            // Återställ transaktionen om något går fel
+                            transaction.Rollback();
+                            Console.WriteLine($"Transaction failed. Rolled back changes. Error: {innerEx.Message}");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Something went wrong updating todos: {ex.Message}");
             }
         }
 
@@ -227,7 +279,5 @@ namespace campus_molndal_oop_adv_todo
                 Console.WriteLine($"Something went wrong trying to delete todo: {ex.Message}");
             }
         }
-
-
     }
 }

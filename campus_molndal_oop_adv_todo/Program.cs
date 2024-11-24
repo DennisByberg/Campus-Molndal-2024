@@ -54,8 +54,10 @@ namespace campus_molndal_oop_adv_todo
                                 Console.Clear();
                                 break;
 
+                            default:
+                                Console.WriteLine("Invalid input");
+                                break;
                         }
-
                         break;
 
                     case 3:
