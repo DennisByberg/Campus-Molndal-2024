@@ -39,5 +39,23 @@ namespace campus_molndal_oop_adv._01_oop_sqlite
             Console.WriteLine($"foundBookByAuthor: {foundBookByAuthor}");
             Console.WriteLine($"Books in library: {library.GetBookCount()}");
         }
+
+        // Skapa en hierarki av klasser för olika typer av fordon.
+        // Börja med en abstrakt klass Vehicle med gemensamma egenskaper som Speed och Weight.
+        // Skapa sedan subklasser som Car, Bicycle och Boat.
+        // Implementera en abstrakt metod Move() i Vehicle och override denna i subklasserna för att beskriva hur varje fordonstyp rör sig.
+        // Använd en UML-diagramverktyg för att visualisera klassrelationerna.
+        internal static void PrintExercise3()
+        {
+            Car car = new Car();
+            Bicycle bicycle = new Bicycle();
+            Boat boat = new Boat();
+
+            car.Move();
+            bicycle.Move();
+            boat.Move();
+
+            // + UML DIAGRAM IN: Images/UML1.Png
+        }
     }
 }
