@@ -13,6 +13,9 @@
             _ISBN = ISBN;
         }
 
+        public string GetTitle() => _title;
+        public string GetAuthor() => _author;
+
         public override string ToString()
         {
             return $"Title: {_title}, Author: {_author}, ISBN: {_ISBN}";

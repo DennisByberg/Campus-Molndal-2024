@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="01_oop_sqlite\Classes\Book.cs" />
+    <Compile Include="01_oop_sqlite\Classes\Library.cs" />
     <Compile Include="01_oop_sqlite\Exercises\Exercises1.cs" />
     <Compile Include="01_oop_sqlite\OOPSqLite.cs" />
     <Compile Include="Program.cs" />

@@ -1,5 +1,6 @@
 ﻿using campus_molndal_oop_adv._01_oop_sqlite.Classes;
 using System;
+using System.Xml.Linq;
 
 namespace campus_molndal_oop_adv._01_oop_sqlite
 {
@@ -13,6 +14,30 @@ namespace campus_molndal_oop_adv._01_oop_sqlite
         {
             Book book = new Book("The Whispering Shadows", "Eliza Ravenswood", "978-1-69210-398-4");
             Console.WriteLine(book);
+        }
+
+        // Skapa en klass Library som innehåller en lista av Book-objekt.
+        // Implementera metoder för att lägga till och ta bort böcker, samt en metod för att söka efter böcker baserat på titel eller författare.
+        // Använd C# Collections för att hantera listan av böcker.
+        internal static void PrintExercise2()
+        {
+            Library library = new Library();
+            var book1 = new Book("Echoes of the Forgotten", "Samuel W. Moore", "978-3-54192-374-1");
+            var book2 = new Book("Beneath the Silver Sky", "Amelia Blackstone", "978-0-22150-741-9");
+            var book3 = new Book("The Last Ember's Flame", "Henry J. Sinclair", "978-1-53379-822-0");
+
+            library.AddBook(book1);
+            library.AddBook(book2);
+            library.AddBook(book3);
+
+            library.RemoveBook(book2);
+
+            Book foundBookByTitle = library.FindBookByTitle("Echoes of the Forgotten");
+            Book foundBookByAuthor = library.FindBookByAuthor("Henry J. Sinclair");
+
+            Console.WriteLine($"foundBookByTitle: {foundBookByTitle}");
+            Console.WriteLine($"foundBookByAuthor: {foundBookByAuthor}");
+            Console.WriteLine($"Books in library: {library.GetBookCount()}");
         }
     }
 }

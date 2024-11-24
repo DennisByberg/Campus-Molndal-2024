@@ -4,7 +4,8 @@
     {
         internal static void RunExercises()
         {
-            Exercises1.PrintExercise1();
+            //Exercises1.PrintExercise1();
+            Exercises1.PrintExercise2();
         }
     }
 }
