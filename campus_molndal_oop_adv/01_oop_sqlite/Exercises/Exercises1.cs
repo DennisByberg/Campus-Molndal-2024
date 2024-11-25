@@ -57,5 +57,10 @@ namespace campus_molndal_oop_adv._01_oop_sqlite
 
             // + UML DIAGRAM IN: Images/UML1.Png
         }
+
+        internal static void PrintExercise4()
+        {
+            // Implemented accounts.
+        }
     }
 }
