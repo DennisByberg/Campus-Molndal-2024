@@ -62,5 +62,26 @@ namespace campus_molndal_oop_adv._01_oop_sqlite
         {
             // Implemented accounts.
         }
+
+        internal static void PrintExercise5()
+        {
+            // Exempel 1: Pair<string, int>
+            Pair<string, int> stringIntPair = new Pair<string, int>("Age", 25);
+            Console.WriteLine("String-Int Pair: " + stringIntPair);
+            stringIntPair.First = "Updated Age";
+            stringIntPair.Second = 30;
+            Console.WriteLine("Updated String-Int Pair: " + stringIntPair);
+
+            // Exempel 2: Pair<double, bool>
+            Pair<double, bool> doubleBoolPair = new Pair<double, bool>(99.99, true);
+            Console.WriteLine("Double-Bool Pair: " + doubleBoolPair);
+            doubleBoolPair.First = 77.77;
+            doubleBoolPair.Second = false;
+            Console.WriteLine("Updated Double-Bool Pair: " + doubleBoolPair);
+
+            // Exempel 3: Pair<int, string>
+            Pair<int, string> intStringPair = new Pair<int, string>(1, "One");
+            Console.WriteLine("Int-String Pair: " + intStringPair);
+        }
     }
 }

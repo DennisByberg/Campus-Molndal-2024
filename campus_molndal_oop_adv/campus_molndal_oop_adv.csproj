@@ -47,6 +47,7 @@
     <Compile Include="01_oop_sqlite\Classes\Book.cs" />
     <Compile Include="01_oop_sqlite\Classes\CheckingAccount.cs" />
     <Compile Include="01_oop_sqlite\Classes\Library.cs" />
+    <Compile Include="01_oop_sqlite\Classes\Pair.cs" />
     <Compile Include="01_oop_sqlite\Classes\SavingsAccount.cs" />
     <Compile Include="01_oop_sqlite\Classes\Vehicle.cs" />
     <Compile Include="01_oop_sqlite\Exercises\Exercises1.cs" />
