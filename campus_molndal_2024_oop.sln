@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "campus_molndal_oop_adv_todo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "campus_molndal_oop_adv", "campus_molndal_oop_adv\campus_molndal_oop_adv.csproj", "{FD2EC23A-EAD2-47D4-8CA1-43C5557DF9CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "campus_molndal_oop_adv_library", "campus_molndal_oop_adv_library\campus_molndal_oop_adv_library.csproj", "{DD7F4629-1964-4042-8EF3-4009AC681379}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FD2EC23A-EAD2-47D4-8CA1-43C5557DF9CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD2EC23A-EAD2-47D4-8CA1-43C5557DF9CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD2EC23A-EAD2-47D4-8CA1-43C5557DF9CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7F4629-1964-4042-8EF3-4009AC681379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7F4629-1964-4042-8EF3-4009AC681379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7F4629-1964-4042-8EF3-4009AC681379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7F4629-1964-4042-8EF3-4009AC681379}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
