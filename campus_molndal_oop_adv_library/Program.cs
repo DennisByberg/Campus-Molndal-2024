@@ -12,9 +12,11 @@ namespace campus_molndal_oop_adv_library
             {
                 Console.WriteLine("1. Add Book");
                 Console.WriteLine("2. Add Borrower");
-                Console.WriteLine("3. Display Books");
-                Console.WriteLine("4. Display Borrowers");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("3. Add Loan");
+                Console.WriteLine("4. Update Loan");
+                Console.WriteLine("5. Display Books");
+                Console.WriteLine("6. Display Borrowers");
+                Console.WriteLine("7. Exit");
                 Console.Write(">> ");
 
                 // Kontrollera om inmatningen är en giltig siffra
@@ -55,22 +57,53 @@ namespace campus_molndal_oop_adv_library
                         library.AddBorrower(name, email);
                         break;
 
-                    // Display Books
+                    // Add Loan
                     case 3:
+                        Console.Write("Enter Book Id: ");
+                        if (!int.TryParse(Console.ReadLine(), out int bookId))
+                        {
+                            Console.WriteLine("Invalid Input");
+                            continue;
+                        }
+
+                        Console.Write("Enter Borrower Id: ");
+                        if (!int.TryParse(Console.ReadLine(), out int borrowerId))
+                        {
+                            Console.WriteLine("Invalid Input");
+                            continue;
+                        }
+
+                        library.BorrowBook(bookId, borrowerId, DateTime.UtcNow);
+                        break;
+
+                    // Update Loan
+                    case 4:
+                        Console.Write("Enter Loan Id To Return: ");
+                        if (!int.TryParse(Console.ReadLine(), out int loanId))
+                        {
+                            Console.WriteLine("Invalid input");
+                            continue;
+                        }
+
+                        library.ReturnBook(loanId, DateTime.Now);
+                        break;
+
+                    // Display Books
+                    case 5:
                         Console.WriteLine("\n-");
                         library.DisplayBooks();
                         Console.WriteLine("-\n");
                         break;
 
-                    // Display Borrowerss
-                    case 4:
+                    // Display Borrowers
+                    case 6:
                         Console.WriteLine("\n-");
                         library.DisplayBorrowers();
                         Console.WriteLine("-\n");
                         break;
 
                     // Exit.
-                    case 5:
+                    case 7:
                         return;
 
                     default:

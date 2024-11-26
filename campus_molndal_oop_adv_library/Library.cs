@@ -6,7 +6,8 @@ namespace campus_molndal_oop_adv_library
     enum TablesSchema
     {
         Books,
-        Borrowers
+        Borrowers,
+        Loans
     }
 
     enum BorrowersSchema
@@ -22,6 +23,15 @@ namespace campus_molndal_oop_adv_library
         Title,
         Author,
         Publication_Year
+    }
+
+    enum LoansSchema
+    {
+        Loan_Id,
+        Book_Id,
+        Borrower_Id,
+        Loan_Date,
+        Return_Date
     }
 
     internal class Library
@@ -47,7 +57,8 @@ namespace campus_molndal_oop_adv_library
             {
                 connection.Open();
 
-                string CREATE_BOOKS_TABLE_QUERY = $@"CREATE TABLE IF NOT EXISTS {TablesSchema.Books} (
+                string CREATE_BOOKS_TABLE_QUERY = $@"
+                    CREATE TABLE IF NOT EXISTS {TablesSchema.Books} (
                     Id INTEGER PRIMARY KEY AUTOINCREMENT,
                     Title TEXT NOT NULL,
                     Author TEXT NOT NULL,
@@ -56,10 +67,30 @@ namespace campus_molndal_oop_adv_library
 
                 string CREATE_BORROWERS_TABLE_QUERY = $@"
                     CREATE TABLE IF NOT EXISTS {TablesSchema.Borrowers} (
-                        Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                        Name TEXT NOT NULL,
-                        Email TEXT NOT NULL
-                    );";
+                    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    Name TEXT NOT NULL,
+                    Email TEXT NOT NULL
+                );";
+
+                string CREATE_LOANS_TABLE_QUERY = $@"
+                    CREATE TABLE IF NOT EXISTS {TablesSchema.Loans} (
+                    {LoansSchema.Loan_Id} INTEGER PRIMARY KEY AUTOINCREMENT,
+                    {LoansSchema.Book_Id} INTEGER NOT NULL,
+                    {LoansSchema.Borrower_Id} INTEGER NOT NULL,
+                    {LoansSchema.Loan_Date} TEXT,
+                    {LoansSchema.Return_Date} TEXT,
+                    FOREIGN KEY ({LoansSchema.Book_Id}) REFERENCES {TablesSchema.Books}(Id),
+                    FOREIGN KEY ({LoansSchema.Borrower_Id}) REFERENCES {TablesSchema.Borrowers}(Id)
+                );";
+
+                string CREATE_INDEXES_QUERY = $@"
+                    CREATE INDEX IF NOT EXISTS idx_books_title ON {TablesSchema.Books}(Title);
+                    CREATE INDEX IF NOT EXISTS idx_books_author ON {TablesSchema.Books}(Author);
+                    CREATE INDEX IF NOT EXISTS idx_books_publication_year ON {TablesSchema.Books}(Publication_Year);
+                    CREATE INDEX IF NOT EXISTS idx_borrowers_name ON {TablesSchema.Borrowers}(Name);
+                    CREATE INDEX IF NOT EXISTS idx_loans_book_id ON {TablesSchema.Loans}({LoansSchema.Book_Id});
+                    CREATE INDEX IF NOT EXISTS idx_loans_borrower_id ON {TablesSchema.Loans}({LoansSchema.Borrower_Id});
+                ";
 
                 using (var transaction = connection.BeginTransaction())
                 {
@@ -69,6 +100,16 @@ namespace campus_molndal_oop_adv_library
                     }
 
                     using (var command = new SQLiteCommand(CREATE_BORROWERS_TABLE_QUERY, connection))
+                    {
+                        command.ExecuteNonQuery();
+                    }
+
+                    using (var command = new SQLiteCommand(CREATE_LOANS_TABLE_QUERY, connection))
+                    {
+                        command.ExecuteNonQuery();
+                    }
+
+                    using (var command = new SQLiteCommand(CREATE_INDEXES_QUERY, connection))
                     {
                         command.ExecuteNonQuery();
                     }
@@ -127,6 +168,78 @@ namespace campus_molndal_oop_adv_library
                         command.ExecuteNonQuery();
 
                         Console.WriteLine("Borrower Added");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+        }
+
+        public void BorrowBook(int bookId, int borrowerId, DateTime loanDate)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(CONNECTION_STRING))
+                {
+                    connection.Open();
+
+                    const string QUERY = @"
+                    INSERT INTO Loans (
+                        Book_Id,
+                        Borrower_Id,
+                        Loan_Date
+                    )
+                    VALUES (
+                        @BookId,
+                        @BorrowerId,
+                        @LoanDate
+                    );";
+
+                    using (var command = new SQLiteCommand(QUERY, connection))
+                    {
+                        command.Parameters.AddWithValue("@BookId", bookId);
+                        command.Parameters.AddWithValue("@BorrowerId", borrowerId);
+                        command.Parameters.AddWithValue("@LoanDate", loanDate);
+
+                        command.ExecuteNonQuery();
+
+                        Console.WriteLine("Loan successfully recorded.");
+                    }
+                }
+            }
+            catch (SQLiteException sqEx)
+            {
+                Console.WriteLine($"Database error: {sqEx.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
+        }
+
+        public void ReturnBook(int loanId, DateTime returnDate)
+        {
+            try
+            {
+                using (SQLiteConnection connection = new SQLiteConnection(CONNECTION_STRING))
+                {
+                    connection.Open();
+
+                    string query = $@"
+                    UPDATE Loans
+                    SET Return_Date = @Return_Date
+                    WHERE Loan_Id = @Loan_Id;";
+
+                    using (var command = new SQLiteCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@Return_Date", returnDate);
+                        command.Parameters.AddWithValue("@Loan_Id", loanId);
+
+                        command.ExecuteNonQuery();
+
+                        Console.WriteLine($"Updated loan #{loanId}");
                     }
                 }
             }
