@@ -19,7 +19,6 @@ namespace campus_molndal_oop_adv_library
                 Console.WriteLine("7. Exit");
                 Console.Write(">> ");
 
-                // Kontrollera om inmatningen är en giltig siffra
                 if (!int.TryParse(Console.ReadLine(), out int choice))
                 {
                     Console.WriteLine("Invalid input. Please enter a valid number.");
@@ -102,7 +101,7 @@ namespace campus_molndal_oop_adv_library
                         Console.WriteLine("-\n");
                         break;
 
-                    // Exit.
+                    // Exit
                     case 7:
                         return;
 
